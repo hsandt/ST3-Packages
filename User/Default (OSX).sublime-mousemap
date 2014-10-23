@@ -1,0 +1,60 @@
+[
+	// reach definition (ctrl + left click)
+	// {
+	// 	"button": "button1",
+	// 	"count": 1,
+	// 	"modifiers": ["ctrl"],
+	// 	"press_command": "drag_select",
+	// 	"command": "goto_definition"
+	// },
+	// reach definition (middle-click)
+	{
+		"button": "button3",
+		"count": 1,
+		"modifiers": [],
+		"press_command": "drag_select",
+		"command": "goto_definition"
+	},
+	// close tab under cursor (alt + middle-click)
+	{
+		"button": "button3",
+		"count": 1,
+		"modifiers": ["alt"],
+		"command": "close"
+	},
+	// close pane under cursor (ctrl + middle-click)
+	{
+		"button": "button3",
+		"count": 1,
+		"modifiers": ["ctrl"],
+		"command": "destroy_pane",
+		"args": {"direction": "self"} 
+	},
+
+	/* shortcuts for the 4-button mouse */
+	// {
+	// 	"button": "button4",
+	// 	"count": 1,
+	// 	"modifiers": ["super"],
+	// 	"command": "jump_back"
+	// },
+	// {
+	// 	"button": "button5",
+	// 	"count": 1,
+	// 	"modifiers": ["super"],
+	// 	"command": "jump_forward"
+	// },
+
+	/* shortcut for the 6-button mouse */
+	// BTT takes care of the scroll left and scroll right buttons to move to another tab
+	{
+		"button": "button4",
+		"count": 1,
+		"command": "jump_back"
+	},
+	{
+		"button": "button5",
+		"count": 1,
+		"command": "jump_forward"
+	},
+]
