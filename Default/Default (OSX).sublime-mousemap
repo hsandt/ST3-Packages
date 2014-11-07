@@ -73,7 +73,7 @@
 	},
 
 	// Mouse 3 column select
-	/* USER deactivation */
+	/* CHANGED: deactivation */
 	// not completely overriden by the goto definition "middle click" shortcut, since you can click twice to activate this shortcut
 	// but the goto definition action still applies on the first click, which is not very clean, so I prefer deactivating it
 	// (use alt + left button if you want column selection; shortcuts with modifiers work as usual)

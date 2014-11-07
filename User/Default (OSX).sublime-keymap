@@ -27,4 +27,10 @@
 
 	// caml case (overrides Convert Case > Upper Case)
 	{ "keys": ["super+k", "super+u"], "command": "title_case" },
+
+	// open new tab
+	{ "keys": ["super+t"], "command": "new_file" },
+
+	// open user mousemap
+	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap"} },
 ]

@@ -1,0 +1,16 @@
+[
+    {
+        "caption": "Preferences: Mouse Bindings - Default",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/Default/Default ($platform).sublime-mousemap",
+        }
+    },
+    {
+        "caption": "Preferences: Mouse Bindings - User",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/User/Default ($platform).sublime-mousemap",
+        }
+    },
+]

@@ -45,7 +45,7 @@
 	// 	"command": "jump_forward"
 	// },
 
-	/* shortcut for the 6-button mouse */
+	/* shortcut for the 6-button mouse (overrides button4 and button5 behavior in Default) */
 	// BTT takes care of the scroll left and scroll right buttons to move to another tab
 	{
 		"button": "button4",
