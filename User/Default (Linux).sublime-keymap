@@ -11,10 +11,10 @@
 	    "keys": ["alt+t"], "command": "switch_color_scheme",
 	    "args":
 	    {
-	        "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme" ,
+	        "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	        "color_scheme_2": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
 	    }
-	}
+	},
 
 	// shortcut for soft deletes (left until indentation excluded and right until EOL excluded)
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
