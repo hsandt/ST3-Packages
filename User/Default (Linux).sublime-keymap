@@ -7,11 +7,16 @@
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
 	{ "keys": ["ctrl+shift+v"], "command": "paste" },
+
+	// side bar navigation
+	{ "keys": ["ctrl+alt+w"], "command": "focus_side_bar" },
+
+	// switch color scheme	
 	{  
 	    "keys": ["alt+t"], "command": "switch_color_scheme",
 	    "args":
 	    {
-	        "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	        "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme" ,
 	        "color_scheme_2": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
 	    }
 	},
@@ -20,19 +25,20 @@
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
 	{ "keys": ["shift+delete"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to EOL.sublime-macro"} },
 
-	// {
-	// 	"keys": ["super+alt+t"],
-	// 	"command": "set_layout",
-	// 	"args":
-	// 	{
-	// 		"cols": [0.0, 0.5, 1.0],
-	// 		"rows": [0.0, 0.5, 1.0],
-	// 		"cells": [[0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 2, 2]]
-	// 	}
-	// },
-	// { "keys": ["ctrl+s"], "command": "insert_snippet", "args": {"contents": "self.$0"}, "context":
-	// 	[
-	// 	]
-	// },
+	// delete subwords
+	{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
+	{ "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
+
+	// caml case
+	{ "keys": ["ctrl+k", "ctrl+u"], "command": "title_case" },
+
+	// move by paragraph
+	{"keys": ["ctrl+shift+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false}},
+	{"keys": ["ctrl+shift+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true}},
+
+	/* Package command shortcuts */
+
+	// Origami custom shortcuts (overrides Delete until OEF shortcut)
+	{ "keys": ["ctrl+k", "ctrl+k"], "command": "destroy_pane", "args": {"direction": "self"} },
 
 ]
