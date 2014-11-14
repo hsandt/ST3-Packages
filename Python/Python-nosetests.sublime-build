@@ -1,0 +1,10 @@
+{
+	"path": "/usr/local/bin",
+	"cmd": ["python", "-u", "-B", "-m", "nose", "${project_path}/"],
+	"env":
+	{
+    	"PYTHONPATH":"/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages"
+	},
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	//"selector": "source.python"
+}
