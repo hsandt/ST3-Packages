@@ -1,4 +1,25 @@
 {
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.prefab",
+		"*.FBX",
+		"*.mat",
+		"*.physicMaterial",
+		"*.physicsMaterial2D"
+	],
 	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":

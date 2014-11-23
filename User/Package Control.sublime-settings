@@ -2,6 +2,11 @@
 	"installed_packages":
 	[
 		"Origami",
-		"SideBarEnhancements"
+		"SideBarEnhancements",
+		"SublimeHighlight"
+	],
+	"repositories":
+	[
+		"https://github.com/n1k0/SublimeHighlight/tree/python3"
 	]
 }
