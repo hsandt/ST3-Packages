@@ -11,10 +11,13 @@
 	[
 		"Codecs33",
 		"ConvertToUTF8",
+		"Git",
 		"Origami",
 		"Package Control",
+		"Schemr",
 		"SideBarEnhancements",
-		"SublimeHighlight"
+		"SublimeHighlight",
+		"Theme - Phoenix"
 	],
 	"repositories":
 	[
