@@ -18,7 +18,8 @@
 		"*.FBX",
 		"*.mat",
 		"*.physicMaterial",
-		"*.physicsMaterial2D"
+		"*.physicsMaterial2D",
+		"*.unity"
 	],
 	"font_size": 13,
 	"highlight_modified_tabs": true,
