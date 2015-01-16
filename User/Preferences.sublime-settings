@@ -25,7 +25,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Bracketeer",
+		"Vintage",
+		"ColorSchemeSelector"
 	],
 	"scroll_past_end": true
 }
