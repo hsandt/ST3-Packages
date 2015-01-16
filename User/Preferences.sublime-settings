@@ -21,13 +21,15 @@
 		"*.physicsMaterial2D",
 		"*.unity"
 	],
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Bracketeer",
-		"Vintage",
-		"ColorSchemeSelector"
+		"ColorSchemeSelector",
+		"ConvertToUTF8",
+		"Vintage"
 	],
 	"scroll_past_end": true
 }
