@@ -22,6 +22,7 @@
 	
 	// Alternative shortcuts for comments
 	{ "keys": ["ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["super+semicolon"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["ctrl+alt+c"], "command": "toggle_comment", "args": { "block": true } },
 	{ "keys": ["super+alt+semicolon"], "command": "toggle_comment", "args": { "block": true } },
