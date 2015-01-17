@@ -1,0 +1,6 @@
+{
+	"path": "/usr/bin:/usr/local/bin", // need /usr/bin for readlink (in kivy) and /usr/local/bin for kivy
+	"cmd": ["kivy", "$file"],
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	// "selector": "source.python"
+}
