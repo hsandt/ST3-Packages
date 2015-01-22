@@ -9,7 +9,7 @@
 	{ "keys": ["ctrl+super+w"], "command": "focus_side_bar" },
 
 	// open User bindings
-	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap"} },
+	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
 	{ "keys": ["super+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
 	
 	// open Default bindings
