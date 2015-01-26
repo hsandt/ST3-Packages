@@ -55,4 +55,15 @@
 	// Origami custom shortcuts (overrides Delete until OEF shortcut)
 	{ "keys": ["super+k", "super+k"], "command": "destroy_pane", "args": {"direction": "self"} },
 
+	// MoveTab move to first/last position shortcuts
+	{
+		"keys": ["super+alt+shift+down"],
+		"command": "move_tab",
+		"args": { "position": "999" }
+	},
+	{
+		"keys": ["super+alt+shift+up"],
+		"command": "move_tab",
+		"args": { "position": "0" }
+	},
 ]
