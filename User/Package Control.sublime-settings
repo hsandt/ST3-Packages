@@ -10,6 +10,7 @@
 	],
 	"installed_packages":
 	[
+		"Chmod",
 		"Codecs33",
 		"ConvertToUTF8",
 		"Git",
