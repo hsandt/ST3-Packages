@@ -1,25 +1,25 @@
 [
 	/* NAVIGATION */
 
+	// side bar navigation
+	{ "keys": ["ctrl+super+w"], "command": "focus_side_bar" },
+
 	// tab navigation
 	{ "keys": ["ctrl+super+alt+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
 	{ "keys": ["ctrl+super+alt+right"], "command": "focus_neighboring_group" },
-	
-	// side bar navigation
-	{ "keys": ["ctrl+super+w"], "command": "focus_side_bar" },
 
 	// move by paragraph
 	{ "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
-
-	// open User bindings
-	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
-	{ "keys": ["super+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
 	
 	// open Default bindings
 	{ "keys": ["ctrl+super+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
 	{ "keys": ["ctrl+super+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
 
+	// open User bindings
+	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
+	{ "keys": ["super+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
+	
 	// open new tab
 	{ "keys": ["super+t"], "command": "new_file" },
 
