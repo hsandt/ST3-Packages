@@ -14,14 +14,25 @@
 	{ "keys": ["ctrl+shift+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["ctrl+shift+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 
-	/* TEXT EDIT */
+	// open Default bindings
+	{ "keys": ["ctrl+super+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
+	{ "keys": ["ctrl+super+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
 
-	// alternative for copy
-	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
+	// open User bindings
+	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
+	{ "keys": ["super+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
+	
+	// open new tab
+	{ "keys": ["ctrl+t"], "command": "new_file" },
+
+	/* TEXT EDIT */
 
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
 	{ "keys": ["ctrl+shift+v"], "command": "paste" },
+
+	// alternative shortcut for comments
+	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
 
 	// shortcut for soft deletes (left until indentation excluded and right until EOL excluded)
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
@@ -41,18 +52,40 @@
 	/* APPEARANCE */
 
 	// switch color scheme	
-	{  
-	    "keys": ["alt+t"], "command": "switch_color_scheme",
-	    "args":
-	    {
-	        "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme" ,
-	        "color_scheme_2": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
-	    }
-	},
+	// {  
+	//     "keys": ["alt+t"], "command": "switch_color_scheme",
+	//     "args":
+	//     {
+	//         "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme" ,
+	//         "color_scheme_2": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
+	//     }
+	// },
 
 	/* Package command shortcuts */
 
 	// Origami custom shortcuts (overrides Delete until OEF shortcut)
 	{ "keys": ["ctrl+k", "ctrl+k"], "command": "destroy_pane", "args": {"direction": "self"} },
+
+	// MoveTab move to first/last position shortcuts
+	{
+		"keys": ["super+alt+shift+left"],
+		"command": "move_tab",
+		"args": { "position": "-1" }
+	},
+	{
+		"keys": ["super+alt+shift+right"],
+		"command": "move_tab",
+		"args": { "position": "+1" }
+	},
+	{
+		"keys": ["super+alt+shift+down"],
+		"command": "move_tab",
+		"args": { "position": "999" }
+	},
+	{
+		"keys": ["super+alt+shift+up"],
+		"command": "move_tab",
+		"args": { "position": "0" }
+	},
 
 ]

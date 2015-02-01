@@ -1,26 +1,35 @@
 [
 	/* NAVIGATION */
 
-	// tab navigation
-	{ "keys": ["super+ctrl+alt+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
-	{ "keys": ["super+ctrl+alt+right"], "command": "focus_neighboring_group" },
-	
 	// side bar navigation
 	{ "keys": ["ctrl+super+w"], "command": "focus_side_bar" },
 
-	// open user mousemap
-	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap"} },
+	// tab navigation
+	{ "keys": ["ctrl+super+alt+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+super+alt+right"], "command": "focus_neighboring_group" },
 
+	// move by paragraph
+	{ "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
+	{ "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
+	
+	// open Default bindings
+	{ "keys": ["ctrl+super+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
+	{ "keys": ["ctrl+super+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
+
+	// open User bindings
+	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
+	{ "keys": ["super+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
+	
 	// open new tab
 	{ "keys": ["super+t"], "command": "new_file" },
 
-	/* EDIT */
+	/* TEXT EDIT */
 
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["super+v"], "command": "paste_and_indent" },
 	{ "keys": ["super+shift+v"], "command": "paste" },
 	
-	// Alternative shortcuts for comments
+	// alternative shortcuts for comments
 	{ "keys": ["ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["super+semicolon"], "command": "toggle_comment", "args": { "block": false } },
@@ -35,6 +44,13 @@
 	{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
 	{ "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
 
+	// delete line
+	{ "keys": ["super+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["ctrl+e"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+	// alternative shortcut for duplicate line
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+
 	// caml case (overrides Convert Case > Upper Case)
 	{ "keys": ["super+k", "super+u"], "command": "title_case" },
 
@@ -43,4 +59,15 @@
 	// Origami custom shortcuts (overrides Delete until OEF shortcut)
 	{ "keys": ["super+k", "super+k"], "command": "destroy_pane", "args": {"direction": "self"} },
 
+	// MoveTab move to first/last position shortcuts
+	{
+		"keys": ["super+alt+shift+down"],
+		"command": "move_tab",
+		"args": { "position": "999" }
+	},
+	{
+		"keys": ["super+alt+shift+up"],
+		"command": "move_tab",
+		"args": { "position": "0" }
+	},
 ]

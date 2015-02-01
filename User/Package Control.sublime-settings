@@ -10,11 +10,14 @@
 	],
 	"installed_packages":
 	[
+		"Chmod",
 		"Codecs33",
 		"ConvertToUTF8",
 		"Git",
+		"MoveTab",
 		"Origami",
 		"Package Control",
+		"Project Manager",
 		"Schemr",
 		"SideBarEnhancements",
 		"SublimeHighlight",
