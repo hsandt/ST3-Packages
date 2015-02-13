@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}}
+{
+private:
+	${2:/* private members */}
+
+public:
+	${3:${1/(\w+).*/$1/}}($0);
+	virtual ~$3();
+	$3(const $3&) = delete;
+	$3($3&&) = delete;
+	$3& operator=(const $3&) = delete;
+	$3& operator=($3&&) = delete;
+};]]></content>
+    <tabTrigger>class11</tabTrigger>
+    <description>class C++11</description>
+    <scope>source.c++, source.c++11</scope>
+</snippet>
