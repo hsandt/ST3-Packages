@@ -1,0 +1,25 @@
+[
+   // toggle comment
+   {
+      "command": "toggle_comment",
+      "args": {
+         "block": false
+      }
+   },
+   // move one line forward
+   {
+      "command": "move",
+      "args": {
+         "by": "lines",
+         "forward": true
+      }
+   },
+   // move to beginning of line
+   {
+      "command": "move_to",
+      "args": {
+         "to": "bol",
+         "extend": false
+      }
+   }
+]

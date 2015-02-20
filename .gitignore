@@ -1,10 +1,15 @@
 *
 !.gitignore
 !Default/
+!Default/*
 !User/
+!User/*
 !C++/
+!C++/*
 !Python/
+!Python/*
 !Kivy/
+!Kivy/*
 User/Package Control.sublime-settings
 User/Package Control.last-run
 User/Package Control.ca-list
@@ -20,4 +25,3 @@ User/encoding_cache.json
 
 User/C#.sublime-settings
 User/UnityC#.sublime-settings
-
