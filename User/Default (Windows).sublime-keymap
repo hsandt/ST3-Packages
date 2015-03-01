@@ -19,8 +19,8 @@
 	{ "keys": ["ctrl+shift+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
 
 	// open User bindings
-	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
-	{ "keys": ["super+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
+	{ "keys": ["ctrl+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
+	{ "keys": ["ctrl+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
 	
 	// open new tab
 	{ "keys": ["ctrl+t"], "command": "new_file" },
