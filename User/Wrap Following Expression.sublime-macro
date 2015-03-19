@@ -1,0 +1,6 @@
+[
+	// Wrap following expression with parentheses; turn this into a sublime_plugin.TextCommand for more flexibility
+	// (other types of brackets)
+    {"command": "move_to", "args": {"to": "eol", "extend": true}},
+    {"command": "insert_snippet", "args": {"contents": "($0$SELECTION)"}}
+]

@@ -23,6 +23,9 @@
 	// open new tab
 	{ "keys": ["super+t"], "command": "new_file" },
 
+	// open console
+	{ "keys": ["ctrl+super+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
 	/* TEXT EDIT */
 
 	// swap the keybindings for paste and paste_and_indent
@@ -53,6 +56,19 @@
 
 	// caml case (overrides Convert Case > Upper Case)
 	{ "keys": ["super+k", "super+u"], "command": "title_case" },
+
+	// Auto-pair brackets surrounding following word
+	{ "keys": ["super+("], "command": "run_macro_file", "args": {"file": "res://Packages/User/Wrap Following Expression.sublime-macro"}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			// { "key": "following_text", "operator": "regex_contains", "operand": "^\\w", "match_all": true }
+		]
+	},
+
+	/* BUILD */
+
+	{ "keys": ["super+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
 
 	/* Package command shortcuts */
 
