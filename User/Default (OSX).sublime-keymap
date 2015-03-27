@@ -12,6 +12,9 @@
 	{ "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 	
+	// open Default settings
+	{ "keys": ["ctrl+super+,"], "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"} },
+
 	// open Default bindings
 	{ "keys": ["ctrl+super+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
 	{ "keys": ["ctrl+super+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
@@ -33,11 +36,10 @@
 	{ "keys": ["super+shift+v"], "command": "paste" },
 	
 	// alternative shortcuts for comments
-	{ "keys": ["ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+:"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+shift+:"], "command": "toggle_comment", "args": { "block": true } },
 	{ "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["super+semicolon"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["ctrl+alt+c"], "command": "toggle_comment", "args": { "block": true } },
-	{ "keys": ["super+alt+semicolon"], "command": "toggle_comment", "args": { "block": true } },
+	{ "keys": ["super+alt+c"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Toggle Comment Pass Line.sublime-macro"} },
 
 	// shortcut for soft deletes (left until indentation excluded and right until EOL excluded)
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
@@ -57,6 +59,11 @@
 	// caml case (overrides Convert Case > Upper Case)
 	{ "keys": ["super+k", "super+u"], "command": "title_case" },
 
+	// replace line with clipboard content
+	{ "keys": ["super+ctrl+v"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Delete Line and Paste.sublime-macro"} },
+
+	/* experimental 
+
 	// Auto-pair brackets surrounding following word
 	{ "keys": ["super+("], "command": "run_macro_file", "args": {"file": "res://Packages/User/Wrap Following Expression.sublime-macro"}, "context":
 		[
@@ -70,7 +77,7 @@
 
 	{ "keys": ["super+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
 
-	/* Package command shortcuts */
+	/* PACKAGE command shortcuts */
 
 	// Origami custom shortcuts (overrides Delete until OEF shortcut)
 	{ "keys": ["super+k", "super+k"], "command": "destroy_pane", "args": {"direction": "self"} },
