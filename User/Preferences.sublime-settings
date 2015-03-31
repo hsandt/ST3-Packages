@@ -25,13 +25,11 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"ColorSchemeSelector",
 		"ConvertToUTF8",
-		"Keymap Redefiner",
 		"Bracketeer",
-		"Vintage",
 		"Project Manager",
-		"Gobble"
+		"ColorSchemeSelector",
+		"Vintage"
 	],
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
