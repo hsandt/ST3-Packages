@@ -4,6 +4,6 @@
       "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"},
    },
    {
-      "command": "paste"
+      "command": "paste_and_indent"
    }
 ]
