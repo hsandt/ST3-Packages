@@ -73,7 +73,14 @@
 	// replace line with clipboard content
 	{ "keys": ["super+ctrl+v"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Delete Line and Paste.sublime-macro"} },
 
-	/* experimental 
+	// add semicolumn at the end of line and newline
+	{ "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Add Semicolumn and Line.sublime-macro"}, "context":
+		[
+			{ "key": "selector", "operator": "equal", "operand": "source.cs" },
+		]
+	},
+
+	/* experimental */
 
 	// Auto-pair brackets surrounding following word
 	{ "keys": ["super+("], "command": "run_macro_file", "args": {"file": "res://Packages/User/Wrap Following Expression.sublime-macro"}, "context":
@@ -84,9 +91,13 @@
 		]
 	},
 
-	/* BUILD */
+	/* PALETTE */
 
+	// build
 	{ "keys": ["super+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
+
+	// snippet
+	{ "keys": ["super+ctrl+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
 
 	/* PACKAGE command shortcuts */
 

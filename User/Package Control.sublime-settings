@@ -4,10 +4,16 @@
 	],
 	"installed_packages":
 	[
+		"AutocompletionFuzzy",
 		"Chmod",
 		"Codecs33",
 		"ConvertToUTF8",
+		"ExpandRegion",
+		"Expression",
 		"Git",
+		"GitGutter",
+		"GoToLastEdit",
+		"GotoLastEditEnhanced",
 		"MoveTab",
 		"Origami",
 		"Package Control",
