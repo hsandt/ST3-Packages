@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[for_each(${1:vector}.begin(), $1.end(), ${0:function})]]></content>
+    <tabTrigger>foreach</tabTrigger>
+    <description>for_each</description>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

@@ -49,12 +49,12 @@
 	// BTT takes care of the scroll left and scroll right buttons to move to another tab
 	{
 		"button": "button4",
-		"count": 1,
+		// "count": 1,
 		"command": "jump_back"
 	},
 	{
 		"button": "button5",
-		"count": 1,
+		// "count": 1,
 		"command": "jump_forward"
 	},
 ]

@@ -26,12 +26,18 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Bracketeer",
+		"Edit Command Palette",
+		"Vintage",
 		"ColorSchemeSelector",
 		"ConvertToUTF8",
+		"Gobble",
+		"Bracketeer",
 		"Project Manager",
-		"Vintage"
+		"FindKeyConflicts",
+		"EditorConfig",
+		"AutocompletionFuzzy"
 	],
 	"scroll_past_end": true,
-	"shift_tab_unindent": true
+	"shift_tab_unindent": true,
+	"sublime_enhanced_keybindings": true
 }

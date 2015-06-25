@@ -12,6 +12,9 @@
 	{ "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 	
+	// open Default settings
+	{ "keys": ["ctrl+super+,"], "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"} },
+
 	// open Default bindings
 	{ "keys": ["ctrl+super+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
 	{ "keys": ["ctrl+super+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
@@ -23,6 +26,14 @@
 	// open new tab
 	{ "keys": ["super+t"], "command": "new_file" },
 
+	// open console
+	{ "keys": ["ctrl+super+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+	/* SELECTION */
+	
+	{ "keys": ["super+shift+a"], "command": "expand_region" },
+	{ "keys": ["super+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
+	
 	/* TEXT EDIT */
 
 	// swap the keybindings for paste and paste_and_indent
@@ -30,19 +41,24 @@
 	{ "keys": ["super+shift+v"], "command": "paste" },
 	
 	// alternative shortcuts for comments
-	{ "keys": ["ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+:"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+shift+:"], "command": "toggle_comment", "args": { "block": true } },
 	{ "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["super+semicolon"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["ctrl+alt+c"], "command": "toggle_comment", "args": { "block": true } },
-	{ "keys": ["super+alt+semicolon"], "command": "toggle_comment", "args": { "block": true } },
+	{ "keys": ["super+alt+c"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Toggle Comment Pass Line.sublime-macro"},
+		// exclude search context, where super+alt+c is used to toggle case sensitiveness
+		"context":
+			[
+				{ "key": "setting.is_widget", "operator": "equal", "operand": false }
+			]
+	},
 
 	// shortcut for soft deletes (left until indentation excluded and right until EOL excluded)
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
 	{ "keys": ["shift+delete"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to EOL.sublime-macro"} },
 
 	// delete subwords
-	{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
-	{ "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
+	// { "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
+	// { "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
 
 	// delete line
 	{ "keys": ["super+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
@@ -54,12 +70,45 @@
 	// caml case (overrides Convert Case > Upper Case)
 	{ "keys": ["super+k", "super+u"], "command": "title_case" },
 
-	/* Package command shortcuts */
+	// replace line with clipboard content
+	{ "keys": ["super+ctrl+v"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Delete Line and Paste.sublime-macro"} },
 
-	// Origami custom shortcuts (overrides Delete until OEF shortcut)
+	// add semicolumn at the end of line and newline
+	{ "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Add Semicolumn and Line.sublime-macro"}, "context":
+		[
+			{ "key": "selector", "operator": "equal", "operand": "source.cs" },
+		]
+	},
+
+	/* experimental */
+
+	// Auto-pair brackets surrounding following word
+	{ "keys": ["super+("], "command": "run_macro_file", "args": {"file": "res://Packages/User/Wrap Following Expression.sublime-macro"}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			// { "key": "following_text", "operator": "regex_contains", "operand": "^\\w", "match_all": true }
+		]
+	},
+
+	/* PALETTE */
+
+	// build
+	{ "keys": ["super+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
+
+	// snippet
+	{ "keys": ["super+ctrl+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
+
+	/* PACKAGE command shortcuts */
+
+	// Origami //
+
+	// Overrides Delete until OEF
 	{ "keys": ["super+k", "super+k"], "command": "destroy_pane", "args": {"direction": "self"} },
 
-	// MoveTab move to first/last position shortcuts
+	// MoveTab //
+
+	// Move to first/last position shortcuts
 	{
 		"keys": ["super+alt+shift+down"],
 		"command": "move_tab",
@@ -70,4 +119,27 @@
 		"command": "move_tab",
 		"args": { "position": "0" }
 	},
+
+	// GoToLastEditEnhanced //
+
+	// These are the original shortcuts, but useful to override identical OmniSharp shortcuts
+	// We could also comment the shortcuts in the OmniSharp package (it is not compressed)
+	{
+	  "keys": ["alt+z"],
+	  "command": "goto_last_edit_enhanced",
+	  "context": [
+	    {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+	  ]
+	},
+
+	{
+	  "keys": ["alt+shift+z"],
+	  "command": "goto_last_edit_enhanced",
+	  "args": {
+	    "backward": true
+	  },
+	  "context": [
+	    {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+	  ]
+	}
 ]

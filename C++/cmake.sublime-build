@@ -1,0 +1,11 @@
+{
+	"shell_cmd": ["cmake", "${project_path}"],
+	"path": "/usr/local/bin",
+	"shell": true,
+	"working_dir": "${project_path}/build",
+	"env": {
+		"CC": "clang",
+		"CXX": "clang++",
+		// "CMAKE_CXX_FLAGS": "-std=c++11"
+	},
+}

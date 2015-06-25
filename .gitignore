@@ -1,9 +1,17 @@
 *
 !.gitignore
 !Default/
+!Default/*
 !User/
+!User/*
+!C++/
+!C++/*
 !Python/
+!Python/*
 !Kivy/
+!Kivy/*
+User/Preferences.sublime-settings
+User/Package Control.sublime-settings
 User/Package Control.last-run
 User/Package Control.ca-list
 User/Package Control.ca-bundle
@@ -18,3 +26,9 @@ User/encoding_cache.json
 
 User/C#.sublime-settings
 User/UnityC#.sublime-settings
+
+User/packages.sublime-workspace
+
+User/Preferences.sublime-settings
+
+User/.SublimeREPLHistory/shell.db
