@@ -2,6 +2,7 @@
 	/* NAVIGATION */
 
 	// side bar navigation
+	{ "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" },  // rewritten in User because double shortcuts are overriden by last shortcut
 	{ "keys": ["ctrl+alt+w"], "command": "focus_side_bar" },
 
 	// tab navigation
