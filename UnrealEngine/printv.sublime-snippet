@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[printv(TEXT("${1:var}: %s"), $1);]]></content>
+    <tabTrigger>pv</tabTrigger>
+    <description>printv</description>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

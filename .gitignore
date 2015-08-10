@@ -10,6 +10,8 @@
 !Python/*
 !Kivy/
 !Kivy/*
+!UnrealEngine/
+!UnrealEngine/*
 User/Preferences.sublime-settings
 User/Package Control.sublime-settings
 User/Package Control.last-run

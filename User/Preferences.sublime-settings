@@ -28,15 +28,15 @@
 	"ignored_packages":
 	[
 		"FindKeyConflicts",
+		"EditorConfig",
 		"Edit Command Palette",
 		"Vintage",
-		"Bracketeer",
-		"ColorSchemeSelector",
-		"Project Manager",
 		"AutocompletionFuzzy",
-		"ConvertToUTF8",
+		"ColorSchemeSelector",
 		"Gobble",
-		"EditorConfig"
+		"ConvertToUTF8",
+		"Project Manager",
+		"Bracketeer"
 	],
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,

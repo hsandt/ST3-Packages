@@ -1,12 +1,12 @@
 [
 	// reach definition (ctrl + left-click)
-	{
-		"button": "button1", 
-		"count": 1,
-		"modifiers": ["ctrl"],
-		"press_command": "drag_select",
-		"command": "goto_definition"
-	},
+	// {
+	// 	"button": "button1", 
+	// 	"count": 1,
+	// 	"modifiers": ["ctrl"],
+	// 	"press_command": "drag_select",
+	// 	"command": "goto_definition"
+	// },
 
 	// reach definition (middle-click)
 	{
@@ -25,7 +25,7 @@
 	// 	"command": "destroy_pane",
 	// 	"args": {"direction": "self"} 
 	// },
-
+	
 	// Ctrl + Mouse 1 Column select
 	{
 		"button": "button1", "modifiers": ["ctrl"],
