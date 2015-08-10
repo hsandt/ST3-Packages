@@ -1,0 +1,23 @@
+{
+	//"path": "/usr/local/bin:$PATH",
+	// "path": "/usr/bin:$PATH",
+	// Let Pathway.py find the right paths
+	"cmd": ["python", "-u", "$file"], // FIXME: convert '...root/a/b.py' to 'a.b', and use -m option to fix import error
+	"env":
+	{
+    	//"PYTHONPATH":"/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages"
+    	// "PYTHONPATH":"/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages"
+    	"PYTHONPATH":"/usr/local/lib/python2.7/site-packages"  // brew python version
+	},
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"working_dir": "${project_path}",
+	"selector": "source.python",
+
+	"linux": {
+		"path": "/usr/bin",
+		"env":
+		{
+			"PYTHONPATH":"/usr/local/lib/python2.7/dist-packages"
+		},
+	}
+}

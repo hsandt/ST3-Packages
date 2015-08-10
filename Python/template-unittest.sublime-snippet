@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[import unittest
+
+
+class ${1:My}TestCase(unittest.TestCase):
+    """${2:My test case}"""
+
+    @classmethod
+    def setUpClass(cls):
+        pass
+
+    def test_${3:something}(self):
+        """Test $3"""
+        ${0:self.assertEqual(True, False)}
+
+    @classmethod
+    def tearDownClass(cls):
+        pass
+
+
+if __name__ == '__main__':
+    unittest.main()
+]]></content>
+    <tabTrigger>unittest</tabTrigger>
+    <scope>source.python</scope>
+    <description>Template: unittest</description>
+</snippet>
+
+
