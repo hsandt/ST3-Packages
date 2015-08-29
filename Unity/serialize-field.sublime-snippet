@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[[SerializeField]]]></content>
+	<tabTrigger>sf</tabTrigger>
+	<scope>source.cs</scope>
+	<description>SerializeField</description>
+</snippet>

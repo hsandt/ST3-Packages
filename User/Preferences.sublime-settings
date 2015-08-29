@@ -1,4 +1,14 @@
 {
+	"added_words":
+	[
+		"metadata",
+		"Tangram",
+		"screenshot",
+		"Minkowski",
+		"Nef",
+		"vertices",
+		"discretize"
+	],
 	"binary_file_patterns":
 	[
 		"*.jpg",
@@ -27,19 +37,21 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"FindKeyConflicts",
-		"EditorConfig",
-		"Edit Command Palette",
-		"Vintage",
 		"AutocompletionFuzzy",
 		"ColorSchemeSelector",
-		"Gobble",
-		"ConvertToUTF8",
+		"Edit Command Palette",
+		"OmniSharp",
+		"EditorConfig",
 		"Project Manager",
-		"Bracketeer"
+		"Vintage",
+		"FindKeyConflicts",
+		"Bracketeer",
+		"Gobble",
+		"ConvertToUTF8"
 	],
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
 	"show_encoding": true,
-	"sublime_enhanced_keybindings": true
+	"sublime_enhanced_keybindings": true,
+	"trim_trailing_white_space_on_save": false
 }

@@ -17,6 +17,7 @@
 		"Flat Colors",
 		"Git",
 		"GitGutter",
+		"Google Spell Check",
 		"GoToLastEdit",
 		"GotoLastEditEnhanced",
 		"LaTeXTools",
@@ -31,11 +32,13 @@
 		"Project Manager",
 		"Schemr",
 		"SideBarEnhancements",
+		"Sublime Bookmarks",
 		"SublimeHighlight",
 		"SublimeREPL",
 		"SyntaxFold",
 		"Text Pastry",
 		"Theme - Phoenix",
+		"Trailing Punctuation",
 		"Zip Browser"
 	],
 	"repositories":
