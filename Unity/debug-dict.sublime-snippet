@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[foreach(KeyValuePair<${1:string}, ${2:T}> entry in ${3:dict}) {
+	Debug.LogFormat("{0}: {1}", entry.Key, entry.Value);
+}]]></content>
+	<tabTrigger>log-dict</tabTrigger>
+	<scope>source.cs</scope>
+	<description>Debug Log dictionary</description>
+</snippet>

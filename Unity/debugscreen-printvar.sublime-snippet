@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[DebugScreen.Print(${0:0}, "${1:var}: {0}$0", $1);]]></content>
+	<tabTrigger>pv</tabTrigger>
+	<scope>source.cs</scope>
+	<description>DebugScreen.Print</description>
+</snippet>

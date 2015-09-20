@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[using UnityEngine;
+using UnityEditor;
+using System.Collections;
+
+[CustomEditor(typeof(${1:${TM_FILENAME/(.+)Editor\..+/$1/}}))]
+public class ${2:$1Editor} : Editor {
+	public override void OnInspectorGUI() {
+		DrawDefaultInspector();
+
+		$1 sensor = ($1) target;
+
+		if (!Application.isPlaying) {
+			$0
+		}
+	}
+}
+]]></content>
+	<tabTrigger>template-editor</tabTrigger>
+	<scope>source.cs</scope>
+	<description>Template: Editor</description>
+</snippet>

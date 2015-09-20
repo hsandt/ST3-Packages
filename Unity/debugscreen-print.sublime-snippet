@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[DebugScreen.Print(${0:0}, "${1:msg}");]]></content>
+	<tabTrigger>print</tabTrigger>
+	<scope>source.cs</scope>
+	<description>DebugScreen.Print</description>
+</snippet>
