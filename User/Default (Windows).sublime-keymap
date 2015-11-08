@@ -57,9 +57,30 @@
 	// add newline before (needed until I change navigation plugin shortcut to stop after next bracket group)
 	{ "keys": ["ctrl+alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
 
+	/* FILE */
+
+	// save all open files
+	{ "keys": ["ctrl+alt+s"], "command": "save_all" },
+
 	/* APPEARANCE */
 
 	// ...
+
+	/* PALETTE */
+
+	// default command palette shortcut (put in user to get priority over AutocompletionFuzzy shortcut)
+	{ "keys": ["ctrl+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+	// build
+	{ "keys": ["ctrl+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
+
+	// snippet
+	// { "keys": ["super+ctrl+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
+
+	/* CONSOLE */
+
+	// stop current build / run
+	// { "keys": ["super+alt+c"], "command": "exec", "args": {"kill": true} },
 
 	/* Package command shortcuts */
 
