@@ -31,8 +31,8 @@
 		"*.physicsMaterial2D",
 		"*.unity"
 	],
-	"color_scheme": "Packages/User/SublimeLinter/SalmonOnIce (SL).tmTheme",
-	"font_face": "Menlo",
+	// "color_scheme": "Packages/User/SublimeLinter/SalmonOnIce (SL).tmTheme",
+	// "font_face": "Menlo",
 	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
