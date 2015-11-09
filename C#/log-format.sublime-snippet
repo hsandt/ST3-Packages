@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[Debug.LogFormat("$1", $0);]]></content>
+	<tabTrigger>lf</tabTrigger>
+	<scope>source.cs</scope>
+	<description>LogFormat</description>
+</snippet>
