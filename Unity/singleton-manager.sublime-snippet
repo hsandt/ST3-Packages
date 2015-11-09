@@ -1,5 +1,8 @@
 <snippet>
-	<content><![CDATA[public class ${1:${TM_FILENAME/(.+)\..+/$1/}} : SingletonManager<$1> {
+	<content><![CDATA[using UnityEngine;
+using System.Collections;
+
+public class ${1:${TM_FILENAME/(.+)\..+/$1/}} : SingletonManager<$1> {
 
 	protected $1 () {} // guarantee this will be always a singleton only - can't use the constructor!
 
@@ -11,7 +14,7 @@
 
 }
 ]]></content>
-	<tabTrigger>sm</tabTrigger>
+	<tabTrigger>template-singleton</tabTrigger>
 	<scope>source.cs</scope>
-	<description>SingletonManager class</description>
+	<description>Template: SingletonManager</description>
 </snippet>
