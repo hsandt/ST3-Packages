@@ -54,8 +54,19 @@
 	// { "keys": ["ctrl+alt+up"], "command": "swap_line_up" },
 	// { "keys": ["ctrl+alt+down"], "command": "swap_line_down" },
 
+	// replace line with clipboard content
+	{ "keys": ["ctrl+alt+v"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Delete Line and Paste.sublime-macro"} },
+
+
 	// add newline before (needed until I change navigation plugin shortcut to stop after next bracket group)
-	{ "keys": ["ctrl+alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
+	{ "keys": ["ctrl+shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
+
+	// add semicolumn at the end of line and newline
+	{ "keys": ["ctrl+alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Add Semicolumn and Line.sublime-macro"}, "context":
+		[
+			{ "key": "selector", "operator": "equal", "operand": ["source.cs", "source.cpp"] },
+		]
+	},
 
 	/* APPEARANCE */
 
