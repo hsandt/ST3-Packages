@@ -1,21 +1,15 @@
-*
-!.gitignore
-!Default/
-!Default/*
-!User/
-!User/*
-!C++/
-!C++/*
-!Python/
-!Python/*
-!Kivy/
-!Kivy/*
-!SublimeUnityCSharp/
-!SublimeUnityCSharp/*
-!Unity/
-!Unity/*
-!UnrealEngine/
-!UnrealEngine/*
+Autocompletion
+bz2
+Codecs33
+ConvertToUTF8
+EncodingHelper
+Gobble
+LateXTools
+OmniSharp
+SublimeHighlight
+SublimeLinter
+SublimeREPL
+SyntaxFold
 User/Preferences.sublime-settings
 User/Package Control.sublime-settings
 User/Package Control.last-run

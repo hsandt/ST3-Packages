@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[public class ${1:${TM_FILENAME/(.+)\..+/$1/}} : Singleton<$1> {
+
+	protected $1 () {} // guarantee this will be always a singleton only - can't use the constructor!
+
+	$0
+
+	}
+
+}
+]]></content>
+	<tabTrigger>singleton</tabTrigger>
+	<scope>source.cs</scope>
+	<description>Singleton class</description>
+</snippet>

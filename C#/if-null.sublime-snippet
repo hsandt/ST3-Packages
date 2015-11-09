@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[if (${1:var} == null) {
+	${0:$SELECTION}
+}]]></content>
+	<tabTrigger>ifn</tabTrigger>
+	<scope>source.cs</scope>
+	<description>if null</description>
+</snippet>
