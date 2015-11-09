@@ -2,6 +2,8 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Chmod",
+		"Codecs33"
 	],
 	"installed_packages":
 	[

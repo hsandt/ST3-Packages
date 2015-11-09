@@ -36,6 +36,8 @@
 	"ignored_packages":
 	[
 		"Bracketeer",
+		"Chmod",
+		"Codecs33",
 		"ColorSchemeSelector",
 		"ConvertToUTF8",
 		"Edit Command Palette",
