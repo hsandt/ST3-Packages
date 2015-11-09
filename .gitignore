@@ -10,6 +10,8 @@
 !Python/*
 !Kivy/
 !Kivy/*
+!SublimeUnityCSharp/
+!SublimeUnityCSharp/*
 !Unity/
 !Unity/*
 !UnrealEngine/
