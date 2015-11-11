@@ -31,7 +31,8 @@
 		"*.physicsMaterial2D",
 		"*.unity"
 	],
-	"font_size": 14,
+	"default_line_ending": "unix",
+	"font_size": 15,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -43,6 +44,7 @@
 		"Edit Command Palette",
 		"EditorConfig",
 		"FindKeyConflicts",
+		"GitGutter",
 		"Gobble",
 		"OmniSharp",
 		"Project Manager",
@@ -53,6 +55,5 @@
 	"shift_tab_unindent": true,
 	"show_encoding": true,
 	"sublime_enhanced_keybindings": true,
-	"trim_trailing_white_space_on_save": false,
-    "default_line_ending": "unix",
+	"trim_trailing_white_space_on_save": false
 }
