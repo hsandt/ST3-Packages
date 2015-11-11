@@ -1,6 +1,8 @@
 {
 	"font_face": "Inconsolata",
 	// "font_size": 14,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"tab_size": 4,
 	// "translate_tabs_to_spaces": false,
 	"ensure_newline_at_eof_on_save": true,
