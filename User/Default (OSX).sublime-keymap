@@ -11,7 +11,7 @@
 	// move by paragraph
 	{ "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
-	
+
 	// open Default settings
 	{ "keys": ["ctrl+super+,"], "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"} },
 
@@ -22,7 +22,7 @@
 	// open User bindings
 	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
 	{ "keys": ["super+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
-	
+
 	// open new tab
 	{ "keys": ["super+t"], "command": "new_file" },
 
@@ -30,16 +30,16 @@
 	{ "keys": ["ctrl+super+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
 	/* SELECTION */
-	
+
 	{ "keys": ["super+shift+a"], "command": "expand_region" },
 	{ "keys": ["super+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
-	
+
 	/* TEXT EDIT */
 
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["super+v"], "command": "paste_and_indent" },
 	{ "keys": ["super+shift+v"], "command": "paste" },
-	
+
 	// alternative shortcuts for comments
 	{ "keys": ["super+:"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["super+shift+:"], "command": "toggle_comment", "args": { "block": true } },
@@ -59,7 +59,9 @@
 
 	// delete subwords
 	// { "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
+	// { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
 	// { "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
+	// { "keys": ["alt+delete"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
 
 	// delete line
 	{ "keys": ["super+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },

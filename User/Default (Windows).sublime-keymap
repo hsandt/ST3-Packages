@@ -29,6 +29,10 @@
 	// switch header/implementation
 	{ "keys": ["ctrl+alt+up"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]} },
 
+	// [WINDOWS] goto anything (to override SublimeREPL shortcut to View Previous)
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
+
 	/* TEXT EDIT */
 
 	// swap the keybindings for paste and paste_and_indent
@@ -43,9 +47,14 @@
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
 	{ "keys": ["shift+delete"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to EOL.sublime-macro"} },
 
+	// delete word (override SublimeREPL shortcut)
+	{ "keys": ["ctrl+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": false } },
+
 	// delete subwords
-	{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
-	{ "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
+	// { "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
+	{ "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+	// { "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
+	{ "keys": ["alt+delete"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
 
 	// caml case
 	{ "keys": ["ctrl+k", "ctrl+u"], "command": "title_case" },
@@ -98,5 +107,8 @@
 		"command": "move_tab",
 		"args": { "position": "999" }
 	},
+
+	// [WINDOWS JP KEY] Trailing punctuation: alt+; becomes alt+= on sublime.log_input(True)
+    { "keys": ["alt+="], "command": "trailing_punctuation", "args": {"char": ";"} }
 
 ]
