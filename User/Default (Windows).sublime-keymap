@@ -32,6 +32,10 @@
 	// [WINDOWS] goto anything (to override SublimeREPL shortcut to View Previous)
 	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
+	/* SELECTION */
+
+	{ "keys": ["ctrl+shift+a"], "command": "expand_region" },
+	{ "keys": ["ctrl+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
 
 	/* TEXT EDIT */
 
