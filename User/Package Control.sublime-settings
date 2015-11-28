@@ -7,11 +7,14 @@
 	"installed_packages":
 	[
 		"AutocompletionFuzzy",
+		"AutoHotkey",
 		"BracketHighlighter",
+		"Chain of Command",
 		"Chmod",
 		"Codecs33",
 		"Colorsublime",
 		"ConvertToUTF8",
+		"EditorConfig",
 		"EncodingHelper",
 		"ExpandRegion",
 		"Expression",
@@ -22,6 +25,7 @@
 		"Google Spell Check",
 		"GoToLastEdit",
 		"GotoLastEditEnhanced",
+		"ImprovedMacros",
 		"LaTeXTools",
 		"Local History",
 		"MoveTab",
@@ -46,6 +50,7 @@
 	],
 	"repositories":
 	[
-		"https://github.com/n1k0/SublimeHighlight/tree/python3"
+		"https://github.com/n1k0/SublimeHighlight/tree/python3",
+		"https://github.com/skuroda/ImprovedMacros"
 	]
 }

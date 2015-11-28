@@ -1,6 +1,9 @@
 [
 	/* NAVIGATION */
 
+	// [WINDOWS] goto anything (to override SublimeREPL shortcut to View Previous)
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
 	// side bar navigation
 	{ "keys": ["ctrl+alt+w"], "command": "focus_side_bar" },
 	{ "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" },  // does not work if set in Default only
@@ -29,15 +32,15 @@
 	// switch header/implementation
 	{ "keys": ["ctrl+alt+up"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]} },
 
-	// [WINDOWS] goto anything (to override SublimeREPL shortcut to View Previous)
-	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-
 	/* SELECTION */
 
 	{ "keys": ["ctrl+shift+a"], "command": "expand_region" },
 	{ "keys": ["ctrl+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
 
 	/* TEXT EDIT */
+
+	// [WINDOWS] Override package shortcut back to default shortcut
+	{ "keys": ["ctrl+k", "ctrl+l"], "command": "lower_case" },
 
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
@@ -97,7 +100,7 @@
 		"args": { "position": "-1" }
 	},
 	{
-		"keys": ["ctrl+alt+pageup"],
+		"keys": ["ctrl+alt+pagedown"],
 		"command": "move_tab",
 		"args": { "position": "+1" }
 	},
@@ -113,6 +116,33 @@
 	},
 
 	// [WINDOWS JP KEY] Trailing punctuation: alt+; becomes alt+= on sublime.log_input(True)
-    { "keys": ["alt+="], "command": "trailing_punctuation", "args": {"char": ";"} }
+	{ "keys": ["alt+="], "command": "trailing_punctuation", "args": {"char": ";"} },
+
+	// AutoHotKey: run current script
+
+	// Improved Macros version does not work for ahkrun
+	// {
+	// 	"keys": ["ctrl+s"], "command": "run_multiple_commands",
+	// 	"args": {
+	// 		"commands": [
+	// 			{ "command": "save" },
+	// 			{ "command": "ahkrun" }
+	// 		]
+	// 	},
+	// 	"context": [{ "key": "selector", "operator": "equal", "operand": "source.ahk" }]
+	// },
+
+	// ChainOfCommand version works
+	{
+		"keys": ["ctrl+s"], "command": "chain",
+		"args": {
+			"commands": [
+				["save"],
+				["ahkrun"]
+			]
+		},
+		"context": [{ "key": "selector", "operator": "equal", "operand": "source.ahk" }]
+	},
+
 
 ]
