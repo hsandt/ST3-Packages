@@ -3,6 +3,8 @@
 	"ignore_vcs_packages": true,
 	"in_process_packages":
 	[
+		"Chmod",
+		"Codecs33"
 	],
 	"installed_packages":
 	[
