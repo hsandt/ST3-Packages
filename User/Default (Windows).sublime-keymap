@@ -32,6 +32,9 @@
 	// switch header/implementation
 	{ "keys": ["ctrl+alt+up"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]} },
 
+	// [WINDOWS] Override Autocomplete Fuzzy complete subword forward to restore default
+	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+
 	/* SELECTION */
 
 	{ "keys": ["ctrl+shift+a"], "command": "expand_region" },
