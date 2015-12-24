@@ -38,6 +38,9 @@
 	// [WINDOWS] Override Autocomplete Fuzzy complete subword forward to restore default
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
+	// open console
+	{ "keys": ["ctrl+shift+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
 	/* SELECTION */
 
 	{ "keys": ["ctrl+shift+a"], "command": "expand_region" },
@@ -89,6 +92,9 @@
 			{ "key": "selector", "operator": "equal", "operand": ["source.cs", "source.cpp"] },
 		]
 	},
+
+	// toggle overwrite (INSERT is not available on some keyboards)
+	{ "keys": ["ctrl+alt+o"], "command": "toggle_overwrite" },
 
 	/* FILE */
 

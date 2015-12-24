@@ -37,6 +37,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"AutocompletionFuzzy",
 		"Bracketeer",
 		"Chmod",
 		"Codecs33",
