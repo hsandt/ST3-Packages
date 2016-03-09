@@ -33,7 +33,7 @@
 		"*.uasset",
 		"*.in"
 	],
-	"font_size": 15,
+	"font_size": 12,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -46,7 +46,9 @@
 		"Edit Command Palette",
 		"EditorConfig",
 		"FindKeyConflicts",
+		"GitGutter",
 		"Gobble",
+		"Local History",
 		"OmniSharp",
 		"Project Manager",
 		"SublimeLinter",
