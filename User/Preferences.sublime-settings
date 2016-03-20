@@ -58,5 +58,19 @@
 	"shift_tab_unindent": true,
 	"show_encoding": true,
 	"sublime_enhanced_keybindings": true,
-	"trim_trailing_white_space_on_save": false
+	"trim_trailing_white_space_on_save": false,
+
+	// Package-specific
+
+	// GL Shader Validator
+	/*
+	Sets the default specification that should be used:
+
+	 0 = WebGL
+	 1 = GLSL ES
+	 2 = CSS Shaders
+
+	*/
+	"glsv_spec": 1
+
 }

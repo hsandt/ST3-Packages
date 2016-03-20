@@ -1,0 +1,1 @@
+{"platforms": ["*"], "sublime_text": "*", "dependencies": [], "url": "https://github.com/WebGLTools/GL-Shader-Validator", "version": "2014.04.17.20.51.55", "description": "A GLSL and ESSL validator for Sublime Text 2 and 3"}
