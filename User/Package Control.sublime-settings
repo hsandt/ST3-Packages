@@ -3,15 +3,20 @@
 	"ignore_vcs_packages": true,
 	"in_process_packages":
 	[
+		"Chmod",
+		"Codecs33"
 	],
 	"installed_packages":
 	[
 		"AutocompletionFuzzy",
+		"AutoHotkey",
 		"BracketHighlighter",
+		"Chain of Command",
 		"Chmod",
 		"Codecs33",
 		"Colorsublime",
 		"ConvertToUTF8",
+		"EditorConfig",
 		"EncodingHelper",
 		"ExpandRegion",
 		"Expression",
@@ -19,9 +24,11 @@
 		"Flat Colors",
 		"Git",
 		"GitGutter",
+		"GL Shader Validator",
 		"Google Spell Check",
 		"GoToLastEdit",
 		"GotoLastEditEnhanced",
+		"ImprovedMacros",
 		"LaTeXTools",
 		"LineEndings",
 		"Local History",
@@ -34,6 +41,7 @@
 		"Preferences Editor",
 		"Project Manager",
 		"Schemr",
+		"Shader Syntax (GLSL HLSL Cg)",
 		"SideBarEnhancements",
 		"Sublime Bookmarks",
 		"SublimeHighlight",
@@ -47,6 +55,7 @@
 	],
 	"repositories":
 	[
-		"https://github.com/n1k0/SublimeHighlight/tree/python3"
+		"https://github.com/n1k0/SublimeHighlight/tree/python3",
+		"https://github.com/skuroda/ImprovedMacros"
 	]
 }
