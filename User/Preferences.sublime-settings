@@ -32,7 +32,13 @@
 		"*.unity"
 	],
 	"default_line_ending": "unix",
-	"font_size": 15,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".hg",
+		"CVS"
+	],
+	"font_size": 16,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
