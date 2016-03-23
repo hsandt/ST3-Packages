@@ -41,10 +41,10 @@
 		"CVS"
 	],
 	"font_size": 16,
+	"glsv_spec": 1,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"AutocompletionFuzzy",
 		"Bracketeer",
 		"Chmod",
 		"Codecs33",
@@ -66,18 +66,4 @@
 	"show_encoding": true,
 	"sublime_enhanced_keybindings": true,
 	"trim_trailing_white_space_on_save": false
-
-	// Package-specific
-
-	// GL Shader Validator
-	/*
-	Sets the default specification that should be used:
-
-	 0 = WebGL
-	 1 = GLSL ES
-	 2 = CSS Shaders
-
-	*/
-	"glsv_spec": 1
-
 }
