@@ -38,6 +38,9 @@
 	// [WINDOWS] Override Autocomplete Fuzzy complete subword forward to restore default
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
+	// [WINDOWS] goto anything (to override SublimeREPL shortcut to View Previous)
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	
 	// open console
 	{ "keys": ["ctrl+shift+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
