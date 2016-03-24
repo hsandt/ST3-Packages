@@ -18,6 +18,9 @@
 	{ "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 
+	// open User settings
+	{ "keys": ["alt+s"], "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} },
+
 	// open Default bindings
 	{ "keys": ["ctrl+shift+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
 	{ "keys": ["ctrl+shift+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
@@ -35,6 +38,9 @@
 	// [WINDOWS] Override Autocomplete Fuzzy complete subword forward to restore default
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
+	// [WINDOWS] goto anything (to override SublimeREPL shortcut to View Previous)
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	
 	// open console
 	{ "keys": ["ctrl+shift+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
@@ -101,6 +107,22 @@
 	/* APPEARANCE */
 
 	// ...
+
+	/* PALETTE */
+
+	// default command palette shortcut (put in user to get priority over AutocompletionFuzzy shortcut)
+	{ "keys": ["ctrl+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+	// build
+	{ "keys": ["ctrl+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
+
+	// snippet
+	// { "keys": ["super+ctrl+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
+
+	/* CONSOLE */
+
+	// stop current build / run
+	// { "keys": ["super+alt+c"], "command": "exec", "args": {"kill": true} },
 
 	/* Package command shortcuts */
 
