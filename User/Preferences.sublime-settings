@@ -33,6 +33,15 @@
 	],
 	// "font_face": "Consolas",
 	"font_size": 13,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".hg",
+		"CVS"
+	],
+	"font_size": 15,
+	"glsv_spec": 1,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -43,7 +52,6 @@
 		"ColorSchemeSelector",
 		"ConvertToUTF8",
 		"Edit Command Palette",
-		"EditorConfig",
 		"FindKeyConflicts",
 		"GitGutter",
 		"Gobble",
