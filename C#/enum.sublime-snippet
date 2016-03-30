@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[public enum ${1:${TM_FILENAME/(.+)\..+/$1/}} {
+	None,
+	${0:$SELECTION}
+}]]></content>
+	<tabTrigger>enum</tabTrigger>
+	<scope>source.cs</scope>
+	<description>enum</description>
+</snippet>
