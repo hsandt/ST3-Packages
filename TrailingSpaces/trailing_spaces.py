@@ -103,6 +103,7 @@ def find_trailing_spaces(view):
         removal = False if current_offender == None else line.intersects(current_offender)
         highlightable = [i for i in offending_lines if i != current_offender] if removal else offending_lines
         # return [offending_lines, highlightable]
+        # print(offending_lines, highlightable)  # DEBUG
         return [highlightable, highlightable]  # MODIFIED: also do not trim current line
 
 
