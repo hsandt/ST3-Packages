@@ -120,7 +120,7 @@
 	{ "keys": ["ctrl+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
 
 	// snippet
-	// { "keys": ["super+ctrl+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
+	{ "keys": ["super+ctrl+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
 
 	/* CONSOLE */
 
@@ -182,5 +182,10 @@
 		},
 		"context": [{ "key": "selector", "operator": "equal", "operand": "source.ahk" }]
 	},
+
+	// Traling Punctuation (; is $ in FR keyboard, . is ; in FR keyboard)
+	{ "keys": ["ctrl+;"], "command": "trailing_punctuation", "args": {"char": ";"} },
+	{ "keys": ["ctrl+."], "command": "trailing_punctuation", "args": {"char": ";"} },
+	{ "keys": ["ctrl+,"], "command": "trailing_punctuation", "args": {"char": ","} }
 
 ]
