@@ -43,7 +43,7 @@
 
 	// [WINDOWS] goto anything (to override SublimeREPL shortcut to View Previous)
 	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-	
+
 	// open console
 	{ "keys": ["ctrl+shift+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
@@ -63,7 +63,7 @@
 
 	// alternative shortcut for comments
 	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["ctrl+alt+c"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Toggle Comment Pass Line.sublime-macro"} },
+	{ "keys": ["alt+c"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Toggle Comment Pass Line.sublime-macro"} },
 
 	// shortcut for soft deletes (left until indentation excluded and right until EOL excluded)
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
@@ -182,6 +182,5 @@
 		},
 		"context": [{ "key": "selector", "operator": "equal", "operand": "source.ahk" }]
 	},
-
 
 ]
