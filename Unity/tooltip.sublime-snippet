@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[[Tooltip("$SELECTION")]]]></content>
+	<tabTrigger>tt</tabTrigger>
+	<scope>source.cs</scope>
+	<description>Tooltip</description>
+</snippet>
