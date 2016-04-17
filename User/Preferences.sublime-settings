@@ -15,6 +15,7 @@
 		"*.jpeg",
 		"*.png",
 		"*.gif",
+		"*.otf",
 		"*.ttf",
 		"*.tga",
 		"*.dds",
@@ -29,7 +30,12 @@
 		"*.mat",
 		"*.physicMaterial",
 		"*.physicsMaterial2D",
-		"*.unity"
+		"*.unity",
+		"*.asset",
+		"*.uasset",
+		"*.controller",
+		"*.anim",
+		"*.in"
 	],
 	// "font_face": "Consolas",
 	"font_size": 13,

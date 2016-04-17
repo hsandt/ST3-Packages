@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[List<List<$1>> $0]]></content>
+	<tabTrigger>2xlist</tabTrigger>
+	<scope>source.cs</scope>
+	<description>list of lists</description>
+</snippet>
