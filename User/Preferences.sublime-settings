@@ -34,7 +34,7 @@
 		".hg",
 		"CVS"
 	],
-	"font_size": 15,
+	"font_size": 12,
 	"glsv_spec": 1,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
