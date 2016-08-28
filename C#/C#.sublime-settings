@@ -1,0 +1,17 @@
+{
+	"font_face": "Inconsolata",
+	"font_size": 16,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"tab_size": 4,
+	// "translate_tabs_to_spaces": false,
+	"ensure_newline_at_eof_on_save": true,
+	"trim_trailing_white_space_on_save": false,
+	"extensions":
+	[
+
+	],
+	"auto_complete": true,
+	"auto_complete_selector": "source - comment",
+	"auto_complete_triggers": [ {"selector": "source.cs", "characters": ".<"} ],
+}

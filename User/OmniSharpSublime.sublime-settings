@@ -1,3 +1,4 @@
 {
-	"omnisharp_server_config_location": "/Users/hs/Library/Application Support/Sublime Text 3/Packages/OmniSharp/PrebuiltOmniSharpServer/config.json"
+	// "omnisharp_server_config_location": "/Users/hs/Library/Application Support/Sublime Text 3/Packages/OmniSharp/PrebuiltOmniSharpServer/config.json"
+	"omnisharp_server_config_location": "/Users/hs/Library/Application Support/Sublime Text 3/Packages/User/OmniSharp/config.json"
 }

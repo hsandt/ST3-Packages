@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[Debug.LogFormat("${1:var}: {0}$0", $1);]]></content>
+	<tabTrigger>logfv</tabTrigger>
+	<scope>source.cs</scope>
+	<description>Debug.LogFormat var</description>
+</snippet>

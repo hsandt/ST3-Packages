@@ -5,6 +5,7 @@
 		"*.jpeg",
 		"*.png",
 		"*.gif",
+		"*.otf",
 		"*.ttf",
 		"*.tga",
 		"*.dds",
@@ -19,25 +20,44 @@
 		"*.mat",
 		"*.physicMaterial",
 		"*.physicsMaterial2D",
-		"*.unity"
+		"*.unity",
+		"*.asset",
+		"*.uasset",
+		"*.controller",
+		"*.anim",
+		"*.in"
 	],
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-	"font_size": 13,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".hg",
+		"CVS"
+	],
+	"font_size": 15,
+	"glsv_spec": 1,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"AutocompletionFuzzy",
 		"Bracketeer",
+		"Chmod",
+		"Codecs33",
 		"ColorSchemeSelector",
 		"ConvertToUTF8",
 		"Edit Command Palette",
-		"EditorConfig",
 		"FindKeyConflicts",
+		"GitGutter",
 		"Gobble",
+		"Local History",
+		"OmniSharp",
+		"Project Manager",
+		"SublimeLinter",
 		"Vintage"
 	],
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
 	"show_encoding": true,
-	"sublime_enhanced_keybindings": true
+	"sublime_enhanced_keybindings": true,
+	"trim_trailing_white_space_on_save": false
 }

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[${1:type} m_${3:${2/(.+)/\u$1/}};
+public $1 ${2:attr} { get { return m_$3; } }]]></content>
+	<tabTrigger>get</tabTrigger>
+	<scope>source.cs</scope>
+	<description>get property</description>
+</snippet>
