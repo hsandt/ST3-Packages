@@ -49,9 +49,11 @@
 		"FindKeyConflicts",
 		"GitGutter",
 		"Gobble",
+		"Kivy",
 		"Local History",
 		"OmniSharp",
 		"Project Manager",
+		"ProjectManager",
 		"SublimeLinter",
 		"Vintage"
 	],
