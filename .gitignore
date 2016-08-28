@@ -1,34 +1,35 @@
-Autocompletion
-bz2
-Codecs33
-ConvertToUTF8
-EncodingHelper
-Gobble
-LateXTools
-OmniSharp
-SublimeHighlight
-SublimeLinter
-SublimeREPL
-SyntaxFold
-User/Preferences.sublime-settings
-User/Package Control.sublime-settings
-User/Package Control.last-run
-User/Package Control.ca-list
-User/Package Control.ca-bundle
-User/Package Control.merged-ca-bundle
-User/Package Control.system-ca-bundle
-User/Package Control.user-ca-bundle
-User/Package Control.cache/
-User/Package Control.ca-certs/
-User/encoding_cache.json
+/Autocompletion
+/backrefs
+/bz2
+/Codecs33
+/ConvertToUTF8
+/EncodingHelper
+/Gobble
+/LaTeXTools
+/OmniSharp
+/SublimeHighlight
+/SublimeLinter
+/SublimeREPL
+/SyntaxFold
+/User/Preferences.sublime-settings
+/User/Package Control.sublime-settings
+/User/Package Control.last-run
+/User/Package Control.ca-list
+/User/Package Control.ca-bundle
+/User/Package Control.merged-ca-bundle
+/User/Package Control.system-ca-bundle
+/User/Package Control.user-ca-bundle
+/User/Package Control.cache/
+/User/Package Control.ca-certs/
+/User/encoding_cache.json
 
 .DS_Store
 
-User/C#.sublime-settings
-User/UnityC#.sublime-settings
+/User/C#.sublime-settings
+/User/UnityC#.sublime-settings
 
-User/packages.sublime-workspace
+/User/packages.sublime-workspace
 
-User/Preferences.sublime-settings
+/User/Preferences.sublime-settings
 
-User/.SublimeREPLHistory/shell.db
+/User/.SublimeREPLHistory/shell.db
