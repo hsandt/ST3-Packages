@@ -47,8 +47,8 @@
 	{ "keys": ["ctrl+k", "ctrl+u"], "command": "title_case" },
 
 	// swap lines
-	{ "keys": ["super+alt+up"], "command": "swap_line_up" },
-	{ "keys": ["super+alt+down"], "command": "swap_line_down" },
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
 
 	/* APPEARANCE */
 
