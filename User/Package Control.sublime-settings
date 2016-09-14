@@ -7,7 +7,6 @@
 	"installed_packages":
 	[
 		"AutocompletionFuzzy",
-		"AutoHotkey",
 		"BracketHighlighter",
 		"Chain of Command",
 		"Chmod",

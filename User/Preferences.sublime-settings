@@ -40,9 +40,7 @@
 	"ignored_packages":
 	[
 		"AutocompletionFuzzy",
-		"AutoHotkey",
 		"Bracketeer",
-		"Chmod",
 		"Codecs33",
 		"ColorSchemeSelector",
 		"ConvertToUTF8",
