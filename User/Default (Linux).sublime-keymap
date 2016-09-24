@@ -1,4 +1,9 @@
 [
+	/* SYSTEM*/
+
+	// re-override khrizt/GotoLastEdit shortcut
+	{ "keys": ["ctrl+q"], "command": "exit" },
+
 	/* NAVIGATION */
 
 	// side bar navigation
@@ -20,11 +25,14 @@
 	{ "keys": ["ctrl+super+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
 
 	// open User bindings
-	{ "keys": ["super+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
-	{ "keys": ["super+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
-	
+	{ "keys": ["ctrl+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
+	{ "keys": ["ctrl+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
+
 	// open new tab
 	{ "keys": ["ctrl+t"], "command": "new_file" },
+
+	// open console
+	{ "keys": ["ctrl+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
 	/* TEXT EDIT */
 
@@ -34,6 +42,7 @@
 
 	// alternative shortcut for comments
 	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["alt+c"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Toggle Comment Pass Line.sublime-macro"} },
 
 	// shortcut for soft deletes (left until indentation excluded and right until EOL excluded)
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
@@ -52,8 +61,8 @@
 
 	/* APPEARANCE */
 
-	// switch color scheme	
-	// {  
+	// switch color scheme
+	// {
 	//     "keys": ["alt+t"], "command": "switch_color_scheme",
 	//     "args":
 	//     {
@@ -88,5 +97,11 @@
 		"command": "move_tab",
 		"args": { "position": "0" }
 	},
+
+	// khrizt/GotoLastEdit shortcuts
+	{
+        "keys": ["alt+q"],
+        "command": "last_edit_line"
+	}
 
 ]
