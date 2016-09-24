@@ -60,5 +60,6 @@
 	"shift_tab_unindent": true,
 	"show_encoding": true,
 	"sublime_enhanced_keybindings": true,
-	"trim_trailing_white_space_on_save": false
+	"trim_trailing_white_space_on_save": false,
+	"update_check": false  // Linux only, since PPA takes care of updates (although late)
 }
