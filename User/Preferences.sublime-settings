@@ -37,8 +37,7 @@
 		"*.anim",
 		"*.in"
 	],
-	// "font_face": "Consolas",
-	"font_size": 13,
+	"close_windows_when_empty": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -46,7 +45,8 @@
 		".hg",
 		"CVS"
 	],
-	"font_size": 15,
+	"font_options": "gray_antialias",
+	"font_size": 13,
 	"glsv_spec": 1,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -61,9 +61,12 @@
 		"FindKeyConflicts",
 		"GitGutter",
 		"Gobble",
+		"GoToLastEdit",
 		"Local History",
 		"OmniSharp",
 		"Project Manager",
+		"Shader Syntax (GLSL HLSL Cg)",
+		"Sublime Bookmarks",
 		"SublimeLinter",
 		"Vintage"
 	],

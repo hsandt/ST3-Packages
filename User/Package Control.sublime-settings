@@ -36,9 +36,10 @@
 		"PackageResourceViewer",
 		"Preference Helper",
 		"Preferences Editor",
-		"Project Manager",
+		"ProjectManager",
 		"Schemr",
 		"Shader Syntax (GLSL HLSL Cg)",
+		"ShaderLanguages",
 		"SideBarEnhancements",
 		"Sublime Bookmarks",
 		"SublimeHighlight",
@@ -48,6 +49,7 @@
 		"Text Pastry",
 		"Theme - Phoenix",
 		"Trailing Punctuation",
+		"TrailingSpaces",
 		"Zip Browser"
 	],
 	"repositories":
