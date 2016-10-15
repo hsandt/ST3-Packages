@@ -1,0 +1,19 @@
+{
+	"cmd": ["python3", "-u", "$file"],
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.python",
+
+	"linux": {
+		"path": "/usr/bin",
+		"env":
+		{
+			"PYTHONPATH":"/usr/local/lib/python3.5/dist-packages"
+		},
+	},
+	// "osx": {
+	// 	"env":
+	// 	{
+	// 		"PYTHONPATH":"/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages"
+	// 	}
+	// }
+}

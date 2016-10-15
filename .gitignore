@@ -1,4 +1,5 @@
 /Autocompletion
+/backrefs
 /bz2
 /Codecs33
 /ConvertToUTF8
@@ -33,7 +34,7 @@
 
 .DS_Store
 
-/User/Projects/
+#/User/Projects/
 
 /User/C#.sublime-settings
 /User/UnityC#.sublime-settings
