@@ -6,12 +6,12 @@
 /EncodingHelper
 /Gobble
 /LateXTools
-#/markupsafe
-#/mdpopups
+/markupsafe
+/mdpopups
 /OmniSharp
-#/pygments
-#/python-markdown
-#/python-jinja2
+/pygments
+/python-markdown
+/python-jinja2
 /SublimeHighlight
 /SublimeLinter
 /SublimeREPL
