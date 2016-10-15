@@ -1,14 +1,4 @@
 {
-	"added_words":
-	[
-		"metadata",
-		"Tangram",
-		"screenshot",
-		"Minkowski",
-		"Nef",
-		"vertices",
-		"discretize"
-	],
 	"binary_file_patterns":
 	[
 		"*.jpg",
@@ -67,6 +57,9 @@
 		"Project Manager",
 		"Shader Syntax (GLSL HLSL Cg)",
 		"Sublime Bookmarks",
+		"Local History",
+		"OmniSharp",
+		"ProjectManager",
 		"SublimeLinter",
 		"Vintage"
 	],
