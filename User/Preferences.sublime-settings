@@ -37,6 +37,7 @@
 		"*.anim",
 		"*.in"
 	],
+	"close_windows_when_empty": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -44,21 +45,21 @@
 		".hg",
 		"CVS"
 	],
-	"font_size": 15,
+	"font_options": "gray_antialias",
+	"font_size": 13,
 	"glsv_spec": 1,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"AutocompletionFuzzy",
 		"Bracketeer",
 		"Chmod",
 		"Codecs33",
 		"ColorSchemeSelector",
 		"ConvertToUTF8",
 		"Edit Command Palette",
-		"EditorConfig",
 		"FindKeyConflicts",
 		"GitGutter",
-		"GL Shader Validator",
 		"Gobble",
 		"GoToLastEdit",
 		"Local History",
@@ -67,7 +68,6 @@
 		"Shader Syntax (GLSL HLSL Cg)",
 		"Sublime Bookmarks",
 		"SublimeLinter",
-		"TrailingSpaces",
 		"Vintage"
 	],
 	"scroll_past_end": true,

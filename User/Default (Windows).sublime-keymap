@@ -272,7 +272,7 @@
 			{"key": "overlay_visible", "operator": "equal", "operand": false},
 		],
 	},
-	
+
 	// Trailing Punctuation (; is $ in FR keyboard, . is ; in FR keyboard)
 	{ "keys": ["ctrl+;"], "command": "trailing_punctuation", "args": {"char": ";"} },
 	{ "keys": ["ctrl+."], "command": "trailing_punctuation", "args": {"char": ";"} },
