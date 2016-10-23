@@ -17,12 +17,12 @@
 	{ "keys": ["super+alt+right"], "command": "next_view" },
 
 	// move by paragraph
-	{ "keys": ["ctrl+shift+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
-	{ "keys": ["ctrl+shift+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
+	{ "keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
+	{ "keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 
 	// open Default bindings
-	{ "keys": ["ctrl+super+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
-	{ "keys": ["ctrl+super+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
+	{ "keys": ["ctrl+shift+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
+	{ "keys": ["ctrl+shift+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
 
 	// open User bindings
 	{ "keys": ["ctrl+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
@@ -31,14 +31,32 @@
 	// open new tab
 	{ "keys": ["ctrl+t"], "command": "new_file" },
 
+	// [LINUX] goto anything (to re-override some autocompletion shortcut)
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
 	// open console
 	{ "keys": ["ctrl+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+	// [OVERRIDE] Re-override AutocompletionFuzzy to native Quick Switch Project...
+	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+
+	/* SELECTION */
+
+	// Incremental expand (ExpandRegion package)
+	{ "keys": ["ctrl+shift+a"], "command": "expand_region" },
+	// { "keys": ["ctrl+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
+
+	// Incremental expand (scope, sublime native command); includes quotes the 1st time
+	{ "keys": ["ctrl+shift+alt+a"], "command": "expand_selection", "args": {"to": "scope"} },
+
+	// Packages-specific shortcuts: BracketHighlighter
 
 	/* TEXT EDIT */
 
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
-	{ "keys": ["ctrl+shift+v"], "command": "paste" },
+	{ "keys": ["ctrl+shift+v"], "command": "paste_from_history" },
+	{ "keys": ["ctrl+shift+alt+v"], "command": "paste" },
 
 	// alternative shortcut for comments
 	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
@@ -56,8 +74,8 @@
 	{ "keys": ["ctrl+k", "ctrl+u"], "command": "title_case" },
 
 	// swap lines
-	{ "keys": ["alt+up"], "command": "swap_line_up" },
-	{ "keys": ["alt+down"], "command": "swap_line_down" },
+	{ "keys": ["ctrl+shift+up"], "command": "swap_line_up" },
+	{ "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
 
 	/* APPEARANCE */
 
@@ -70,6 +88,17 @@
 	//         "color_scheme_2": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
 	//     }
 	// },
+
+	/* PALETTE */
+
+	// default command palette shortcut (put in user to get priority over AutocompletionFuzzy shortcut)
+	{ "keys": ["ctrl+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+	// build
+	{ "keys": ["ctrl+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
+
+	// snippet
+	{ "keys": ["super+ctrl+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
 
 	/* Package command shortcuts */
 
@@ -98,10 +127,49 @@
 		"args": { "position": "0" }
 	},
 
+	/* AutoCompletionFuzzy */
+
+	// Complete subword backward (not fuzzy)
+	{
+	  "keys": ["alt+shift+o"],
+	  "command": "autocompletion",
+	  "args": {
+		"backward": true,
+		"handler": "AutocompletionFuzzy.word.create_completion",
+		"word": "[A-Z]?[a-z]+$|[A-Z]+$",
+		"search": "(__WORD__(?:[a-z]+|[A-Z]+))"
+		},
+		"context": [
+			{"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+			{"key": "overlay_visible", "operator": "equal", "operand": false},
+		],
+	},
+
+	// Complete subword forward (not fuzzy)
+	{
+	  "keys": ["alt+shift+p"],
+	  "command": "autocompletion",
+	  "args": {
+		"backward": false,
+		"handler": "AutocompletionFuzzy.word.create_completion",
+		"word": "[A-Z]?[a-z]+$|[A-Z]+$",
+		"search": "(__WORD__(?:[a-z]+|[A-Z]+))"
+		},
+		"context": [
+			{"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+			{"key": "overlay_visible", "operator": "equal", "operand": false},
+		],
+	},
+
 	// khrizt/GotoLastEdit shortcuts
 	{
         "keys": ["alt+q"],
         "command": "last_edit_line"
-	}
+	},
+
+	// Trailing Punctuation (; is $ in FR keyboard, . is ; in FR keyboard)
+	{ "keys": ["ctrl+;"], "command": "trailing_punctuation", "args": {"char": ";"} },
+	{ "keys": ["ctrl+,"], "command": "trailing_punctuation", "args": {"char": ","} },
+	// { "keys": ["ctrl+."], "command": "trailing_punctuation", "args": {"char": ";"} },
 
 ]
