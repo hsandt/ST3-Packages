@@ -1,4 +1,8 @@
 {
+	"added_words":
+	[
+		"Proto"
+	],
 	"binary_file_patterns":
 	[
 		"*.jpg",
@@ -39,14 +43,12 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"AutocompletionFuzzy",
 		"Bracketeer",
 		"Chmod",
 		"Codecs33",
 		"ColorSchemeSelector",
 		"ConvertToUTF8",
 		"Edit Command Palette",
-		"FindKeyConflicts",
 		"GitGutter",
 		"Gobble",
 		"Kivy",
@@ -54,6 +56,7 @@
 		"OmniSharp",
 		"Project Manager",
 		"ProjectManager",
+		"SublimeCodeIntel",
 		"SublimeLinter",
 		"Vintage"
 	],
