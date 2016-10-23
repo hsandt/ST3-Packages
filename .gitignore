@@ -22,7 +22,7 @@
 
 /Package Control.cache/
 /User/Preferences.sublime-settings
-/User/Package Control.sublime-settings
+#/User/Package Control.sublime-settings
 /User/Package Control.last-run
 /User/Package Control.ca-list
 /User/Package Control.ca-bundle
