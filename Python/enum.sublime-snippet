@@ -2,6 +2,6 @@
     <content><![CDATA[class ${1:EnumName}(Enum):
     ${2:value} = ${0:1}]]></content>
     <tabTrigger>enum</tabTrigger>
-    <scope>source.python</scope>
+    <scope>source.python, source.renpy.python</scope>
     <description>Enum</description>
 </snippet>
