@@ -49,7 +49,7 @@
 
 	// Go to previous and next position
 	// {
-	// 	"button": "button5",
+	// 	"button": "button7",
 	// 	"count": 1,
 	// 	"command": "jump_back"
 	// },
@@ -59,15 +59,15 @@
 	// 	"command": "jump_forward"
 	// },
 
-	/* shortcut for the 6-button mouse (overrides button4 and button5 behavior in Default) */
+	/* shortcut for the 6-button mouse */
 	// EasyStroke takes care of the scroll left and scroll right buttons to move to another tab
 	{
-		"button": "button4",
+		"button": "button8",
 		// "count": 1,
 		"command": "jump_back"
 	},
 	{
-		"button": "button5",
+		"button": "button9",
 		// "count": 1,
 		"command": "jump_forward"
 	},
