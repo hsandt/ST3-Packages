@@ -28,7 +28,7 @@
 		"count": 1,
 		"modifiers": ["ctrl"],
 		"command": "destroy_pane",
-		"args": {"direction": "self"} 
+		"args": {"direction": "self"}
 	},
 
 	/* shortcuts for the 4-button mouse */

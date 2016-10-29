@@ -5,13 +5,14 @@
 /ConvertToUTF8
 /EncodingHelper
 /Gobble
-/LateXTools
+/LaTeXTools
 /markupsafe
 /mdpopups
 /OmniSharp
 /pygments
 /python-markdown
 /python-jinja2
+/SublimeCodeIntel
 /SublimeHighlight
 /SublimeLinter
 /SublimeREPL
@@ -21,7 +22,7 @@
 
 /Package Control.cache/
 /User/Preferences.sublime-settings
-/User/Package Control.sublime-settings
+#/User/Package Control.sublime-settings
 /User/Package Control.last-run
 /User/Package Control.ca-list
 /User/Package Control.ca-bundle
@@ -34,12 +35,13 @@
 
 .DS_Store
 
-#/User/Projects/
+*.sublime-workspace
+
+/User/Projects/
 
 /User/C#.sublime-settings
 /User/UnityC#.sublime-settings
 
-/User/packages.sublime-workspace
 /User/Preferences.sublime-settings
 
 /User/.SublimeREPLHistory/shell.db

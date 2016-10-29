@@ -3,13 +3,12 @@
 	"ignore_vcs_packages": true,
 	"in_process_packages":
 	[
-		"Chmod",
-		"Codecs33"
 	],
 	"installed_packages":
 	[
 		"AutocompletionFuzzy",
 		"AutoHotkey",
+		"Bash Build System",
 		"BracketHighlighter",
 		"Chain of Command",
 		"Chmod",
@@ -20,6 +19,7 @@
 		"EncodingHelper",
 		"ExpandRegion",
 		"Expression",
+		"FindKeyConflicts",
 		"Flat Chameleon",
 		"Flat Colors",
 		"Git",
@@ -31,6 +31,8 @@
 		"HexViewer",
 		"ImprovedMacros",
 		"LaTeXTools",
+		"Keymaps",
+		"LaTeXTools",
 		"LineEndings",
 		"Local History",
 		"MoveTab",
@@ -41,24 +43,31 @@
 		"Preference Helper",
 		"Preferences Editor",
 		"ProjectManager",
+		"Renpy Language",
 		"Schemr",
 		"Shader Syntax (GLSL HLSL Cg)",
-		"ShaderLanguages",
 		"SideBarEnhancements",
 		"Sublime Bookmarks",
+		"SublimeCodeIntel",
 		"SublimeHighlight",
 		"SublimeLinter",
+		"SublimeLinter-contrib-csharplint",
+		"SublimeLinter-cppcheck",
+		"SublimeLinter-cpplint",
 		"SublimeREPL",
 		"SyntaxFold",
+		"SyntaxManager",
 		"Text Pastry",
 		"Theme - Phoenix",
 		"Trailing Punctuation",
 		"TrailingSpaces",
+		"Whitespace",
 		"Zip Browser"
 	],
 	"repositories":
 	[
 		"https://github.com/n1k0/SublimeHighlight/tree/python3",
-		"https://github.com/skuroda/ImprovedMacros"
+		"https://github.com/skuroda/ImprovedMacros",
+		"https://github.com/Pendrokar/SublimeLinter-contrib-csharplint"
 	]
 }

@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[switch (CodeTuning.GetBranchIndex(0)) {
+	case 0:
+		$1
+	break; case 1:
+		$2
+	break; case 2:
+		$3
+	break; case 3:
+		$4
+	break; default:
+		$5
+	break;
+}
+$0]]></content>
+	<tabTrigger>codebranch-switch</tabTrigger>
+	<scope>source.cs</scope>
+	<description>Code Branch Switch</description>
+</snippet>

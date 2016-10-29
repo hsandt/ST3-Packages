@@ -1,0 +1,80 @@
+{
+    "user": {
+        "debug": false,
+        "delay": 0.25,
+        "error_color": "D02000",
+        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+        "gutter_theme_excludes": [],
+        "lint_mode": "background",
+        "linters": {
+            "cppcheck": {
+                "@disable": false,
+                "args": [],
+                "enable": "style",
+                "excludes": [],
+                "std": []
+            },
+            "cpplint": {
+                "@disable": false,
+                "args": [],
+                "excludes": [],
+                "filter": "-whitespace/braces,-whitespace/newline,-whitespace/tab",
+                "linelength": "100"
+            },
+            "csharplint": {
+                "@disable": false,
+                "args": [],
+                "completesharp_assemblies": [
+                    "C:\\Program Files\\Unity\\Editor\\Data\\Managed\\UnityEngine.dll",
+                    "C:\\Program Files\\Unity\\Editor\\Data\\Managed\\UnityEditor.dll",
+                    "C:\\Program Files\\Unity\\Editor\\Data\\Mono\\lib\\mono\\unity\\UnityScript.dll",
+                    "C:\\Program Files\\Unity\\Editor\\Data\\Mono\\lib\\mono\\unity\\System.Core.dll",
+                    "C:\\Program Files\\Unity\\Editor\\Data\\Mono\\lib\\mono\\unity\\System.dll",
+                    "C:\\Program Files\\Unity\\Editor\\Data\\Managed\\nunit.framework.dll",
+                    "C:\\Program Files\\Unity\\Editor\\Data\\Mono\\lib\\mono\\unity\\mscorlib.dll",
+                    "${project}\\Library\\ScriptAssemblies\\Assembly-CSharp.dll",
+                    "${project}\\Library\\ScriptAssemblies\\Assembly-CSharp-Editor.dll",
+                    "${project}\\Library\\ScriptAssemblies\\Assembly-UnityScript.dll",
+                    "${project}\\Library\\ScriptAssemblies\\Assembly-CSharp-firstpass.dll"
+                ],
+                "excludes": [],
+                "filter": ""
+            }
+        },
+        "mark_style": "outline",
+        "no_column_highlights_line": false,
+        "passive_warnings": false,
+        "paths": {
+            "linux": [],
+            "osx": [],
+            "windows": [
+                "C:\\Users\\acro_\\bin",
+                "C:\\Python27\\Scripts",
+                "C:\\Program Files\\Cppcheck"
+            ]
+        },
+        "python_paths": {
+            "linux": [],
+            "osx": [],
+            "windows": [
+                "C:\\Python27\\Lib\\site-packages"
+            ]
+        },
+        "rc_search_limit": 3,
+        "shell_timeout": 10,
+        "show_errors_on_save": false,
+        "show_marks_in_minimap": true,
+        "syntax_map": {
+            "html (django)": "html",
+            "html (rails)": "html",
+            "html 5": "html",
+            "javascript (babel)": "javascript",
+            "magicpython": "python",
+            "php": "html",
+            "python django": "python",
+            "pythonimproved": "python"
+        },
+        "warning_color": "DDB700",
+        "wrap_find": true
+    }
+}
