@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/home/wing/Developer/Sublime Text/Unzipped Packages"
 		}
 	]
 }

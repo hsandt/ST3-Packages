@@ -2,6 +2,6 @@
     <content><![CDATA[def __init__(self$1):
     ${0:pass}]]></content>
     <tabTrigger>init</tabTrigger>
-    <scope>source.python</scope>
+    <scope>source.python, source.renpy.python</scope>
     <description>def __init__</description>
 </snippet>
