@@ -24,13 +24,16 @@
 		"Flat Colors",
 		"Git",
 		"GitGutter",
+		"GL Shader Validator",
 		"Google Spell Check",
 		"GoToLastEdit",
 		"GotoLastEditEnhanced",
 		"HexViewer",
 		"ImprovedMacros",
+		"LaTeXTools",
 		"Keymaps",
 		"LaTeXTools",
+		"LineEndings",
 		"Local History",
 		"MoveTab",
 		"OmniSharp",
@@ -48,16 +51,23 @@
 		"SublimeCodeIntel",
 		"SublimeHighlight",
 		"SublimeLinter",
+		"SublimeLinter-contrib-csharplint",
+		"SublimeLinter-cppcheck",
+		"SublimeLinter-cpplint",
 		"SublimeREPL",
 		"SyntaxFold",
+		"SyntaxManager",
 		"Text Pastry",
 		"Theme - Phoenix",
 		"Trailing Punctuation",
+		"TrailingSpaces",
+		"Whitespace",
 		"Zip Browser"
 	],
 	"repositories":
 	[
 		"https://github.com/n1k0/SublimeHighlight/tree/python3",
-		"https://github.com/skuroda/ImprovedMacros"
+		"https://github.com/skuroda/ImprovedMacros",
+		"https://github.com/Pendrokar/SublimeLinter-contrib-csharplint"
 	]
 }

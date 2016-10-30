@@ -62,7 +62,7 @@
 
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
-	{ "keys": ["ctrl+shift+v"], "command": "paste" },
+	{ "keys": ["ctrl+super+v"], "command": "paste" },
 
 	// alternative shortcut for comments
 	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
@@ -94,7 +94,7 @@
 	// add newline before (needed until I change navigation plugin shortcut to stop after next bracket group)
 	{ "keys": ["ctrl+shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
 
-	// add semicolumn at the end of line and newline
+	// add semicolun at the end of line and newline
 	{ "keys": ["ctrl+alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Add Semicolumn and Line.sublime-macro"}, "context":
 		[
 			{ "key": "selector", "operator": "equal", "operand": ["source.cs", "source.cpp"] },
@@ -158,6 +158,9 @@
 		]
 	},
 
+	// paste from history
+	{ "keys": ["ctrl+shift+v"], "command": "paste_from_history" },
+
 	/* FILE */
 
 	// save all open files
@@ -210,7 +213,8 @@
 		"args": { "position": "999" }
 	},
 
-	// [WINDOWS JP KEY] Trailing punctuation: alt+; becomes alt+= on sublime.log_input(True)
+	// [WINDOWS JP KEY] Trailing punctuation: ctrl/alt+; becomes ctrl/alt+= when debugging with sublime.log_input(True)
+	{ "keys": ["ctrl+="], "command": "trailing_punctuation", "args": {"char": ";"} },
 	{ "keys": ["alt+="], "command": "trailing_punctuation", "args": {"char": ";"} },
 
 	// AutoHotKey: run current script
