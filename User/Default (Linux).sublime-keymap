@@ -191,4 +191,15 @@
 	{ "keys": ["ctrl+,"], "command": "trailing_punctuation", "args": {"char": ","} },
 	// { "keys": ["ctrl+."], "command": "trailing_punctuation", "args": {"char": ";"} },
 
+	// ColorHighlighter
+	{
+		"keys": ["f5"],
+		"command": "color_picker",
+		"context": [
+			{
+				"key": "color_highlighter.color_picker"
+			}
+		]
+	}
+
 ]
