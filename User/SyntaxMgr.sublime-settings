@@ -5,10 +5,11 @@
         	"platforms": ["linux", "windows", "osx"],
         	"settings":
         	{
+        		// Whitespace
 				"remove_trailing_whitespace_on_save": true,
 				"ensure_single_trailing_newline": true,
 				"ignore_whitespace_only_lines": false,
-				"ignore_whitespace_on_current_line": true
+				"ignore_whitespace_on_current_line": true,
 			}
 		}
 	]
