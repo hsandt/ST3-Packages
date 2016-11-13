@@ -3,6 +3,24 @@
 		"children":
 		[
 
+			// Linux applications
+			{
+				"caption": "Image Viewer",
+				"id": "side-bar-files-open-with-eog",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "eog", // OSX
+									"extensions":"psd|png|jpg|jpeg",  //any file with these extensions
+									"args":[]
+								},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+
+			//separator
+			{"caption":"-"},
+
 			//application 1
 			{
 				"caption": "Photoshop",
