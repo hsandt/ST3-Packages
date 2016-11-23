@@ -35,18 +35,7 @@
                     "${project}\\Library\\ScriptAssemblies\\Assembly-CSharp.dll",
                     "${project}\\Library\\ScriptAssemblies\\Assembly-CSharp-Editor.dll",
                     "${project}\\Library\\ScriptAssemblies\\Assembly-UnityScript.dll",
-                    "${project}\\Library\\ScriptAssemblies\\Assembly-CSharp-firstpass.dll",
-                    "/opt/Unity/Editor/Data/MManaged/UnityEngine.dll",
-                    "/opt/Unity/Editor/Data/Data/Managed/UnityEditor.dll",
-                    "/opt/Unity/Editor/Data/Data/Mono/lib/mono/unity/UnityScript.dll",
-                    "/opt/Unity/Editor/Data/Data/Mono/lib/mono/unity/System.Core.dll",
-                    "/opt/Unity/Editor/Data/Data/Mono/lib/mono/unity/System.dll",
-                    "/opt/Unity/Editor/Data/Data/Managed/nunit.framework.dll",
-                    "/opt/Unity/Editor/Data/Data/Mono/lib/mono/unity/mscorlib.dll",
-                    "${project}/Library/ScriptAssemblies/Assembly-CSharp.dll",
-                    "${project}/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll",
-                    "${project}/Library/ScriptAssemblies/Assembly-UnityScript.dll",
-                    "${project}/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
+                    "${project}\\Library\\ScriptAssemblies\\Assembly-CSharp-firstpass.dll"
                 ],
                 "excludes": [],
                 "filter": ""
