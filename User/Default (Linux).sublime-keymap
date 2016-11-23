@@ -56,6 +56,16 @@
 
 	/* TEXT EDIT */
 
+	// [LINUX] add autocompletion on ctrl+space, which is not by default on Linux (copied from Windows Default keymap)
+	{ "keys": ["ctrl+space"], "command": "auto_complete" },
+	{ "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+		[
+			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+		]
+	},
+
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
 	{ "keys": ["ctrl+shift+v"], "command": "paste_from_history" },
@@ -190,5 +200,16 @@
 	{ "keys": ["ctrl+;"], "command": "trailing_punctuation", "args": {"char": ";"} },
 	{ "keys": ["ctrl+,"], "command": "trailing_punctuation", "args": {"char": ","} },
 	// { "keys": ["ctrl+."], "command": "trailing_punctuation", "args": {"char": ";"} },
+
+	// ColorHighlighter
+	{
+		"keys": ["f5"],
+		"command": "color_picker",
+		"context": [
+			{
+				"key": "color_highlighter.color_picker"
+			}
+		]
+	}
 
 ]

@@ -8,14 +8,14 @@
         "lint_mode": "background",
         "linters": {
             "cppcheck": {
-                "@disable": false,
+                "@disable": true,
                 "args": [],
                 "enable": "style",
                 "excludes": [],
                 "std": []
             },
             "cpplint": {
-                "@disable": false,
+                "@disable": true,
                 "args": [],
                 "excludes": [],
                 "filter": "-whitespace/braces,-whitespace/newline,-whitespace/tab,-readability/todo",
