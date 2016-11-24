@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[this.Log$1("$2", $0);]]></content>
-	<tabTrigger>thislog</tabTrigger>
-	<scope>source.cs</scope>
-	<description>this.Log</description>
-</snippet>

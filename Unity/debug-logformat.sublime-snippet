@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[Debug.LogFormat("$1", $0);]]></content>
+	<content><![CDATA[Debug.LogFormat(${0:this, }"$1", $2);]]></content>
 	<tabTrigger>logf</tabTrigger>
 	<scope>source.cs</scope>
 	<description>Debug.LogFormat</description>
