@@ -31,6 +31,8 @@
 /User/Package Control.ca-bundle
 /User/Package Control.merged-ca-bundle
 /User/Package Control.system-ca-bundle
+# successor or User/Package Control.system-ca-bundle
+User/oscrypto-ca-bundle.crt
 /User/Package Control.user-ca-bundle
 /User/Package Control.cache/
 /User/Package Control.ca-certs/
@@ -44,7 +46,5 @@
 
 /User/C#.sublime-settings
 /User/UnityC#.sublime-settings
-
 /User/Preferences.sublime-settings
-
 /User/.SublimeREPLHistory/shell.db
