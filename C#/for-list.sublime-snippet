@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[for (int ${1:i} = 0; $1 < ${2:element}s.${3:Count}; ++$1) {
+	${4:${2/(.+)/\u$1/}} ${5:$2} = ${2}s[$1];
+	${0:$SELECTION}
+}]]></content>
+	<tabTrigger>forlist</tabTrigger>
+	<scope>source.cs</scope>
+	<description>for list</description>
+</snippet>

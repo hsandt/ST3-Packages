@@ -1,6 +1,9 @@
 [
 	/* NAVIGATION */
 
+	// [WINDOWS] goto anything (to override SublimeREPL shortcut to View Previous)
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
 	// side bar navigation
 	{ "keys": ["ctrl+alt+w"], "command": "focus_side_bar" },
 	{ "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" },  // does not work if set in Default only
@@ -15,6 +18,12 @@
 	{ "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 
+	// [WINDOWS] go forward (default is alt+shift+keypad_minus)
+	{ "keys": ["alt+keypad_plus"], "command": "jump_forward" },
+
+	// open User settings
+	{ "keys": ["alt+s"], "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} },
+
 	// open Default bindings
 	{ "keys": ["ctrl+shift+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
 	{ "keys": ["ctrl+shift+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
@@ -22,30 +31,55 @@
 	// open User bindings
 	{ "keys": ["ctrl+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
 	{ "keys": ["ctrl+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
-	
+
 	// open new tab
 	{ "keys": ["ctrl+t"], "command": "new_file" },
 
 	// switch header/implementation
 	{ "keys": ["ctrl+alt+up"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]} },
 
+	// [WINDOWS] Override Autocomplete Fuzzy complete subword forward to restore default
+	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+
+	// [WINDOWS] goto anything (to re-override SublimeREPL shortcut to View Previous)
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
+	// open console
+	{ "keys": ["ctrl+shift+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+	/* SELECTION */
+
+	{ "keys": ["ctrl+shift+a"], "command": "expand_region" },
+	{ "keys": ["ctrl+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
+
+	// [WINDOWS] Override move to next paragraph (use alt+down anyway)
+	{ "keys": ["ctrl+k", "ctrl+d"], "command": "find_under_expand_skip" },
+
 	/* TEXT EDIT */
+
+	// [WINDOWS] Override package shortcut back to default shortcut
+	{ "keys": ["ctrl+k", "ctrl+l"], "command": "lower_case" },
 
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
-	{ "keys": ["ctrl+shift+v"], "command": "paste" },
+	{ "keys": ["ctrl+super+v"], "command": "paste" },
 
 	// alternative shortcut for comments
 	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["ctrl+alt+c"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Toggle Comment Pass Line.sublime-macro"} },
+	{ "keys": ["alt+c"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Toggle Comment Pass Line.sublime-macro"} },
 
 	// shortcut for soft deletes (left until indentation excluded and right until EOL excluded)
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
 	{ "keys": ["shift+delete"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to EOL.sublime-macro"} },
 
+	// delete word (override SublimeREPL shortcut)
+	{ "keys": ["ctrl+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": false } },
+
 	// delete subwords
-	{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
-	{ "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
+	// { "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
+	{ "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+	// { "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
+	{ "keys": ["alt+delete"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
 
 	// caml case
 	{ "keys": ["ctrl+k", "ctrl+u"], "command": "title_case" },
@@ -57,20 +91,100 @@
 	// replace line with clipboard content
 	{ "keys": ["ctrl+alt+v"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Delete Line and Paste.sublime-macro"} },
 
-
 	// add newline before (needed until I change navigation plugin shortcut to stop after next bracket group)
 	{ "keys": ["ctrl+shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
 
-	// add semicolumn at the end of line and newline
+	// add semicolun at the end of line and newline
 	{ "keys": ["ctrl+alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Add Semicolumn and Line.sublime-macro"}, "context":
 		[
 			{ "key": "selector", "operator": "equal", "operand": ["source.cs", "source.cpp"] },
 		]
 	},
 
+	// toggle overwrite (INSERT is not available on some keyboards)
+	{ "keys": ["ctrl+shift+o"], "command": "toggle_overwrite" },
+
+	// remove surrounding (external) matching brackets (uses BracketHighlighter) when deleting one of them while holding ctrl
+	// can do the same for [], {}, '', ""
+	// backspace works for opening bracket only
+	{ "keys": ["ctrl+backspace"], "command": "bh_key",
+		"args":
+		{
+			"plugin":
+			{
+				"type": ["__all__"],
+				"command": "bh_modules.bracketremove",  // same command to remove (), [], {}, '', "", depending on context
+				"args":
+				{
+					"remove_indent": false,
+					"remove_block": false,
+					"remove_content": false
+				}
+			}
+		}, "context":
+		[
+			{ "key": "preceding_text", "operator": "regex_contains", "operand": "[([{'\"]$", "match_all": true }
+		]
+	},
+	// delete works for closing bracket only
+	{ "keys": ["ctrl+delete"], "command": "bh_key",
+		"args":
+		{
+			"plugin":
+			{
+				"type": ["__all__"],
+				"command": "bh_modules.bracketremove",
+				"args":
+				{
+					"remove_indent": false,
+					"remove_block": false,
+					"remove_content": false
+				}
+			}
+		}, "context":
+		[
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^[([{'\"]", "match_all": true },
+		]
+	},
+
+	/* experimental */
+
+	// Auto-pair brackets surrounding following word
+	{ "keys": ["ctrl+8"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Wrap Following Expression.sublime-macro"}, "context":
+		[
+			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			// { "key": "following_text", "operator": "regex_contains", "operand": "^\\w", "match_all": true }
+		]
+	},
+
+	// paste from history
+	{ "keys": ["ctrl+shift+v"], "command": "paste_from_history" },
+
+	/* FILE */
+
+	// save all open files
+	{ "keys": ["ctrl+alt+s"], "command": "save_all" },
+
 	/* APPEARANCE */
 
 	// ...
+
+	/* PALETTE */
+
+	// default command palette shortcut (put in user to get priority over AutocompletionFuzzy shortcut)
+	{ "keys": ["ctrl+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+	// build
+	{ "keys": ["ctrl+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
+
+	// snippet
+	{ "keys": ["super+ctrl+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
+
+	/* CONSOLE */
+
+	// stop current build / run
+	// { "keys": ["super+alt+c"], "command": "exec", "args": {"kill": true} },
 
 	/* Package command shortcuts */
 
@@ -84,7 +198,7 @@
 		"args": { "position": "-1" }
 	},
 	{
-		"keys": ["ctrl+alt+pageup"],
+		"keys": ["ctrl+alt+pagedown"],
 		"command": "move_tab",
 		"args": { "position": "+1" }
 	},
@@ -98,5 +212,74 @@
 		"command": "move_tab",
 		"args": { "position": "999" }
 	},
+
+	// [WINDOWS JP KEY] Trailing punctuation: ctrl/alt+; becomes ctrl/alt+= when debugging with sublime.log_input(True)
+	{ "keys": ["ctrl+="], "command": "trailing_punctuation", "args": {"char": ";"} },
+	{ "keys": ["alt+="], "command": "trailing_punctuation", "args": {"char": ";"} },
+
+	// AutoHotKey: run current script
+
+	// Improved Macros version does not work for ahkrun
+	// {
+	// 	"keys": ["ctrl+s"], "command": "run_multiple_commands",
+	// 	"args": {
+	// 		"commands": [
+	// 			{ "command": "save" },
+	// 			{ "command": "ahkrun" }
+	// 		]
+	// 	},
+	// 	"context": [{ "key": "selector", "operator": "equal", "operand": "source.ahk" }]
+	// },
+
+	// ChainOfCommand version works
+	{
+		"keys": ["ctrl+s"], "command": "chain",
+		"args": {
+			"commands": [
+				["save"],
+				["ahkrun"]
+			]
+		},
+		"context": [{ "key": "selector", "operator": "equal", "operand": "source.ahk" }]
+	},
+
+	/* AutoCompletionFuzzy */
+
+	// Complete subword backward (not fuzzy)
+	{
+	  "keys": ["alt+shift+o"],
+	  "command": "autocompletion",
+	  "args": {
+		"backward": true,
+		"handler": "AutocompletionFuzzy.word.create_completion",
+		"word": "[A-Z]?[a-z]+$|[A-Z]+$",
+		"search": "(__WORD__(?:[a-z]+|[A-Z]+))"
+		},
+		"context": [
+			{"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+			{"key": "overlay_visible", "operator": "equal", "operand": false},
+		],
+	},
+
+	// Complete subword forward (not fuzzy)
+	{
+	  "keys": ["alt+shift+p"],
+	  "command": "autocompletion",
+	  "args": {
+		"backward": false,
+		"handler": "AutocompletionFuzzy.word.create_completion",
+		"word": "[A-Z]?[a-z]+$|[A-Z]+$",
+		"search": "(__WORD__(?:[a-z]+|[A-Z]+))"
+		},
+		"context": [
+			{"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+			{"key": "overlay_visible", "operator": "equal", "operand": false},
+		],
+	},
+
+	// Trailing Punctuation (; is $ in FR keyboard, . is ; in FR keyboard)
+	{ "keys": ["ctrl+;"], "command": "trailing_punctuation", "args": {"char": ";"} },
+	{ "keys": ["ctrl+."], "command": "trailing_punctuation", "args": {"char": ";"} },
+	{ "keys": ["ctrl+,"], "command": "trailing_punctuation", "args": {"char": ","} }
 
 ]
