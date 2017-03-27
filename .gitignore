@@ -47,4 +47,4 @@ User/oscrypto-ca-bundle.crt
 /User/C#.sublime-settings
 /User/UnityC#.sublime-settings
 /User/Preferences.sublime-settings
-/User/.SublimeREPLHistory/shell.db
+/User/.SublimeREPLHistory/*.db

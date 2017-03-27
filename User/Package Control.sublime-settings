@@ -32,7 +32,6 @@
 		"HexViewer",
 		"ImprovedMacros",
 		"Keymaps",
-		"LaTeXTools",
 		"Line Endings Unify",
 		"Local History",
 		"MoveTab",
@@ -61,6 +60,7 @@
 		"Theme - Phoenix",
 		"Trailing Punctuation",
 		"TrailingSpaces",
+		"Unity Completions",
 		"Whitespace",
 		"Zip Browser"
 	],
