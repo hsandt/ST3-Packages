@@ -3,14 +3,15 @@
 	${3/.+/"""/}
 	${3:$1.}
 
-${4/(\A\s*,\s*\Z)|,?\s*([A-Za-z_][a-zA-Z0-9_]*)\s*(=[^,]*)?(,\s*|$)/(?2:\t$2\t-- $2\n)/g}
+	Attributes:
+${4/(\A\s*,\s*\Z)|,?\s*([A-Za-z_][a-zA-Z0-9_]*)\s*(=[^,]*)?(,\s*|$)/(?2:\t\t$2\: int\n)/g}
 	${3/.+/"""\n/}${3/.+/\t/}def __init__(self${4/([^,])?(.*)/(?1:, )/}${4:arg}):
-		${5:super().__init__(${4/(\A\s*,\s*\Z)|,?\s*([A-Za-z_][a-zA-Z0-9_]*)\s*(=[^,]*)?(,\s*|$)/(?2:$2$4)/g})}
+		${6:super().__init__(${4/(\A\s*,\s*\Z)|,?\s*([A-Za-z_][a-zA-Z0-9_]*)\s*(=[^,]*)?(,\s*|$)/(?2:$2$4)/g})}
 ${4/(\A\s*,\s*\Z)|,?\s*([A-Za-z_][a-zA-Z0-9_]*)\s*(=[^,]*)?(,\s*|$)/(?2:\t\tself.$2 = $2\n)/g}
-	def __repr__(self):
-		return "<${1}: ({0}$6)>".format(self.$7)
+	def __str__(self):
+		return "<${1}: ({0}$7)>".format(${4/(\A\s*,\s*\Z)|,?\s*([A-Za-z_][a-zA-Z0-9_]*)\s*(=[^,]*)?(,\s*|$)/(?2:self.$2, )/g})
 $0]]></content>
     <tabTrigger>class</tabTrigger>
-    <scope>source.python</scope>
+    <scope>source.python, source.renpy.python</scope>
     <description>Python 3 Class</description>
 </snippet>
