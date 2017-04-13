@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[for ${1:i} in ${2:explist} do
+	${0:print(i)}
+end]]></content>
+    <tabTrigger>forexplist</tabTrigger>
+    <scope>source.lua</scope>
+    <description>for i in explist</description>
+</snippet>

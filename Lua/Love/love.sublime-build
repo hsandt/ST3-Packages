@@ -1,0 +1,6 @@
+{
+	"path": "/usr/local/bin",
+	"cmd": ["love", "$project_path"],
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.lua"
+}
