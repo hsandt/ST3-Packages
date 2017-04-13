@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[#if UNITY_EDITOR
+$0
+#endif]]></content>
+	<tabTrigger>ifueditor</tabTrigger>
+	<scope>source.cs</scope>
+	<description>#if UNITY_EDITOR ... #endif</description>
+</snippet>
