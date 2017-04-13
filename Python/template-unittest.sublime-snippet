@@ -25,5 +25,3 @@ if __name__ == '__main__':
     <scope>source.python</scope>
     <description>Template: unittest</description>
 </snippet>
-
-

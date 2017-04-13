@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[return ${0:y}]]></content>
     <tabTrigger>return</tabTrigger>
-    <scope>source.python, source.renpy.python</scope>
+    <scope>source.lua</scope>
     <description>return y</description>
 </snippet>
