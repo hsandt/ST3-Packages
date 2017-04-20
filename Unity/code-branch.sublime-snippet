@@ -13,7 +13,7 @@
 	break;
 }
 $0]]></content>
-	<tabTrigger>codebranch-switch</tabTrigger>
+	<tabTrigger>ct-branch-switch</tabTrigger>
 	<scope>source.cs</scope>
-	<description>Code Branch Switch</description>
+	<description>CodeTuning Branch Switch</description>
 </snippet>
