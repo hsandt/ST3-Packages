@@ -21,7 +21,8 @@
 	// [WINDOWS] go forward (default is alt+shift+keypad_minus)
 	{ "keys": ["alt+keypad_plus"], "command": "jump_forward" },
 
-	// open User settings
+	// open Default and User settings
+	{ "keys": ["alt+shift+s"], "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"} },
 	{ "keys": ["alt+s"], "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} },
 
 	// open Default bindings
