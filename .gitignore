@@ -3,6 +3,7 @@
 /backrefs
 /bz2
 /Codecs33
+/Colorsublime - Themes
 /User/Color Highlighter
 /ConvertToUTF8
 /EncodingHelper
@@ -36,6 +37,7 @@ User/oscrypto-ca-bundle.crt
 /User/Package Control.user-ca-bundle
 /User/Package Control.cache/
 /User/Package Control.ca-certs/
+/User/*.crt
 /User/encoding_cache.json
 
 .DS_Store

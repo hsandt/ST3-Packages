@@ -21,7 +21,8 @@
 	// [WINDOWS] go forward (default is alt+shift+keypad_minus)
 	{ "keys": ["alt+keypad_plus"], "command": "jump_forward" },
 
-	// open User settings
+	// open Default and User settings
+	{ "keys": ["alt+shift+s"], "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"} },
 	{ "keys": ["alt+s"], "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} },
 
 	// open Default bindings
@@ -104,9 +105,12 @@
 	// toggle overwrite (INSERT is not available on some keyboards)
 	{ "keys": ["ctrl+shift+o"], "command": "toggle_overwrite" },
 
+	// EXPERIMENTAL
+	// FIXME: will remove brackets in front of a quote!
 	// remove surrounding (external) matching brackets (uses BracketHighlighter) when deleting one of them while holding ctrl
 	// can do the same for [], {}, '', ""
 	// backspace works for opening bracket only
+	/*
 	{ "keys": ["ctrl+backspace"], "command": "bh_key",
 		"args":
 		{
@@ -146,6 +150,7 @@
 			{ "key": "following_text", "operator": "regex_contains", "operand": "^[([{'\"]", "match_all": true },
 		]
 	},
+	*/
 
 	/* experimental */
 
@@ -179,7 +184,7 @@
 	{ "keys": ["ctrl+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
 
 	// snippet
-	{ "keys": ["super+ctrl+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
+	{ "keys": ["super+alt+s"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
 
 	/* CONSOLE */
 
