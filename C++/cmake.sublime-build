@@ -1,11 +1,25 @@
 {
-	"shell_cmd": ["cmake", "${project_path}"],
-	"path": "/usr/local/bin",
-	"shell": true,
+	"shell_cmd": "cmake \"${project_path}\" && make all",
 	"working_dir": "${project_path}/build",
+
 	"env": {
 		"CC": "clang",
 		"CXX": "clang++",
-		// "CMAKE_CXX_FLAGS": "-std=c++11"
+		// "CMAKE_CXX_FLAGS": "-std=c++1z"
 	},
+
+	// "variants":
+	// [
+	// 	{
+	// 		"name": "Build and Run",
+	// 		"shell_cmd": "cmake \"${project_path}\" && make all && \"./${executable_name}\"",
+	// 		"working_dir": "${project_path}/build",
+
+	// 		"env": {
+	// 			"CC": "clang",
+	// 			"CXX": "clang++",
+	// 			"CMAKE_CXX_FLAGS": "-std=c++1z"
+	// 		}
+	// 	}
+	// ]
 }
