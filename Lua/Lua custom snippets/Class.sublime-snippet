@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[local ${1:Class} = {}
+$1.__index = $1
+
+setmetatable($1, {
+  __call = function (cls, ...)
+    local self = setmetatable({}, cls)
+    self:_init(...)
+    return self
+  end,
+})
+
+function $1:_init(${2:arg})${2/(\A\s*,\s*\Z)|,?\s*([A-Za-z_][a-zA-Z0-9_]*)(,\s*|$)/(?2:\n\tself.$2 = $2)/g}
+end
+$0]]></content>
+    <tabTrigger>Class</tabTrigger>
+    <scope>source.lua</scope>
+    <description>Class</description>
+</snippet>
