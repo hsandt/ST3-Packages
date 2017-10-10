@@ -1,0 +1,32 @@
+{
+  // "folders":
+  // [
+  //   {
+  //     "path": "my/path"
+  //   }
+  // ],
+  "settings":
+  {
+    // "env_file":
+    // {
+    //   "Windows": "%HOME%/Documents/myEnv.bat",
+    //   "Darwin": "~/Documents/myEnv.sh",
+    //   "Linux": "~/Documents/myEnv.sh"
+    // },
+    "env":
+    {
+      "Windows":
+      {
+        "PATH": "%PATH%;%HOME%/.cargo/bin"
+      },
+      // "Darwin":
+      // {
+      //   "PATH": "$PATH:~/Documents/MyTool"
+      // },
+      // "Linux":
+      // {
+      //   "PATH": "$PATH:~/Documents/MyTool"
+      // }
+    }
+  }
+}
