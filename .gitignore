@@ -13,9 +13,14 @@
 /markupsafe
 /mdpopups
 /OmniSharp
+/pymdownx
+/pyyaml
 /pygments
+/pymdownx
 /python-markdown
 /python-jinja2
+/pyyaml
+/shellenv
 /SublimeCodeIntel
 /SublimeHighlight
 /SublimeLinter

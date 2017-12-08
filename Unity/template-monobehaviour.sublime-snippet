@@ -1,7 +1,7 @@
 <snippet>
-	<content><![CDATA[using UnityEngine;
-using System.Collections;
+	<content><![CDATA[using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 [RequireComponent(typeof (${2:Component}))]
 public class ${1:${TM_FILENAME/(.+)\..+/$1/}} : MonoBehaviour {
@@ -30,7 +30,7 @@ public class ${1:${TM_FILENAME/(.+)\..+/$1/}} : MonoBehaviour {
 	}
 
 	void Setup () {
-		
+
 	}
 
 	// Update is called once per frame
@@ -39,7 +39,6 @@ public class ${1:${TM_FILENAME/(.+)\..+/$1/}} : MonoBehaviour {
 	}
 
 }
-
 ]]></content>
 	<tabTrigger>template-monobehaviour</tabTrigger>
 	<scope>source.cs</scope>

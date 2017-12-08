@@ -1,0 +1,86 @@
+<snippet>
+	<content><![CDATA[using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Networking;
+
+public class ${1:${TM_FILENAME/(.+)\..+/$1/}} : NetworkBehaviour {
+
+	public GameObject ${2:prefab};
+
+	[SyncVar(hook = "OnChange${5:${4/(.+)/\u$1/}}")]
+	public ${3:int} ${4:var};
+
+	void Awake () {
+		$0
+	}
+
+	void Start () {
+		Setup();
+	}
+
+	void Setup () {
+
+	}
+
+	public override void OnStartLocalPlayer() {
+
+	}
+
+	public override void OnStartServer() {
+
+	}
+
+	public override void OnStartClient() {
+
+	}
+
+	void Update () {
+		if (!isLocalPlayer)
+		{
+			return;
+		}
+	}
+
+	void FixedUpdate () {
+		if (!isLocalPlayer)
+		{
+			return;
+		}
+	}
+
+	public void MethodRunOnServerOnly () {
+		if (!isServer)
+			return;
+	}
+
+	[Command]
+	void CmdServerMethod()
+	{
+		if ($2 != null)
+		{
+			GameObject instance = (GameObject) Instantiate(prefab, transform.position, transform.rotation);
+
+			// Spawn the instance of all the clients
+			NetworkServer.Spawn(instance);
+		}
+	}
+
+	[ClientRpc]
+	void RpcLocalPlayerMethod()
+	{
+		if (!isLocalPlayer)
+		{
+			return;
+		}
+	}
+
+	void OnChange$5 ($3 value) {
+		Debug.LogFormat(this, "OnChange$5 {0}", value);
+	}
+}
+]]></content>
+	<tabTrigger>template-networkbehaviour</tabTrigger>
+	<scope>source.cs</scope>
+	<description>Template: NetworkBehaviour</description>
+</snippet>
