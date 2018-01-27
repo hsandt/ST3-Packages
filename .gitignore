@@ -14,8 +14,11 @@
 /mdpopups
 /OmniSharp
 /pygments
+/pymdownx
 /python-markdown
 /python-jinja2
+/pyyaml
+/PICO-8
 /SublimeCodeIntel
 /SublimeHighlight
 /SublimeLinter
