@@ -66,6 +66,9 @@
 		]
 	},
 
+	// [LINUX] restore lower case shortcut, which is overriden by some package
+	{ "keys": ["ctrl+k", "ctrl+l"], "command": "lower_case" },
+
 	// swap the keybindings for paste and paste_and_indent
 	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
 	{ "keys": ["ctrl+shift+v"], "command": "paste_from_history" },

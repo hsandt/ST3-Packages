@@ -1,0 +1,46 @@
+<snippet>
+	<content><![CDATA[using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[RequireComponent(typeof (${2:Component}))]
+public class ${1:${TM_FILENAME/(.+)\..+/$1/}} : MonoBehaviour {
+
+	/* external references */
+	// [SerializeField]
+	//
+
+	/* sibling components */
+	$2 ${3:${2/(.+)/\l$1/}};
+
+	/* parameters */
+	// [SerializeField]
+	//
+
+	/* state variables */
+	//
+
+	void Awake () {
+		$3 = this.GetComponentOrFail<$2>();
+	}
+
+	// Use this for initialization
+	void Start () {
+		Setup();
+	}
+
+	void Setup () {
+
+	}
+
+	// Update is called once per frame
+	void FixedUpdate () {
+
+	}
+
+}
+]]></content>
+	<tabTrigger>template-monobehaviour</tabTrigger>
+	<scope>source.cs</scope>
+	<description>Template: MonoBehaviour</description>
+</snippet>
