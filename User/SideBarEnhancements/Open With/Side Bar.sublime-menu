@@ -19,17 +19,35 @@
 				"open_automatically" : false // will close the view/tab and launch the application
 			},
 
+			// Terminal
+			{
+				"caption": "Terminal (Linux)",
+				"id": "side-bar-files-open-with-terminal-linux",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									// FIXME: we need some kind of path because it opens
+									// a fresh terminal and can't access the user binaries
+									"paths": [],
+									"application": "gnome-terminal",
+									"extensions":"",
+									// "args":["--working-dir", "$DIRNAME"]
+								},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+
 			// separator
 			{"caption":"-"},
 
-			// OS applications
+			// OSX applications
 
 			// Terminal
 			{
-				"caption": "Terminal",
-				"id": "side-bar-files-open-with-photoshop",
+				"caption": "Terminal (OSX)",
+				"id": "side-bar-files-open-with-terminal-osx",
 				"application": "Terminal.app", // OSX
 				"extensions": "",  //any file with these extensions
+				"open_automatically" : false // will close the view/tab and launch the application
 			},
 
 			// Photoshop

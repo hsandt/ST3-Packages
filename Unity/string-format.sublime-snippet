@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[string.Format("$1", ${0:args})]]></content>
+    <tabTrigger>stringformat</tabTrigger>
+    <scope>source.cs</scope>
+    <description>string.Format</description>
+</snippet>
