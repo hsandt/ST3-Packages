@@ -40,6 +40,9 @@
 	// open console
 	{ "keys": ["ctrl+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
+	// open build panel
+	{ "keys": ["shift+f4"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true} },
+
 	// [OVERRIDE] Re-override AutocompletionFuzzy to native Quick Switch Project...
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
