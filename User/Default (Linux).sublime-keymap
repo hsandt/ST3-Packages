@@ -89,8 +89,9 @@
 	{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
 	{ "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
 
-	// caml case
-	{ "keys": ["ctrl+k", "ctrl+u"], "command": "title_case" },
+	// case conversion
+	{ "keys": ["ctrl+k", "ctrl+u"], "command": "convert_to_camel" },
+	{ "keys": ["ctrl+k", "ctrl+s"], "command": "convert_to_snake"},
 
 	// swap lines
 	{ "keys": ["ctrl+shift+up"], "command": "swap_line_up" },
