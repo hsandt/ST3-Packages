@@ -1,4 +1,5 @@
 {
+    "rust_phantom_style": "normal",
 	"cargo_build":
 	{
 		"defaults":
