@@ -20,16 +20,29 @@
 	{ "keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 
-	// open User settings
-	{ "keys": ["ctrl+alt+s"], "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} },
+	// open Default/User settings in dual pane
+	{ "keys": ["ctrl+alt+s"], "command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/Default/Preferences.sublime-settings",
+			"default": "{\n\t$0\n}\n"
+		}
+	},
 
-	// open Default bindings
-	{ "keys": ["ctrl+shift+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
-	{ "keys": ["ctrl+shift+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
+	// open keymap Default/User settings in dual pane
+	{ "keys": ["ctrl+alt+k"], "command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
+			"default": "{\n\t$0\n}\n"
+		}
+	},
 
-	// open User bindings
-	{ "keys": ["ctrl+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
-	{ "keys": ["ctrl+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
+	// open mousemap Default/User settings in dual pane
+	{ "keys": ["ctrl+alt+m"], "command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
+			"default": "{\n\t$0\n}\n"
+		}
+	},
 
 	// open new tab
 	{ "keys": ["ctrl+t"], "command": "new_file" },
@@ -131,6 +144,12 @@
 	{ "keys": ["ctrl+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
 
 	// build
+	// for Ren'Py scripts, override the bold tags command mapped to ctrl+b when inside quotes
+	{ "keys": ["ctrl+b"], "command": "build", "context":
+		[
+			{ "key": "selector", "operator": "equal", "operand": ["source.rpy"] },
+		]
+	},
 	{ "keys": ["ctrl+alt+b"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "} },
 
 	// snippet
@@ -199,8 +218,8 @@
 
 	// khrizt/GotoLastEdit shortcuts
 	{
-        "keys": ["alt+q"],
-        "command": "last_edit_line"
+		"keys": ["alt+q"],
+		"command": "last_edit_line"
 	},
 
 	// Trailing Punctuation (; is $ in FR keyboard, . is ; in FR keyboard)
