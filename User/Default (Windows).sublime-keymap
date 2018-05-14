@@ -48,6 +48,9 @@
 	// open console
 	{ "keys": ["ctrl+shift+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
+	// open build output
+	{"keys": ["shift+f4"], "command": "show_panel", "args": {"panel": "output.exec"} },
+
 	/* SELECTION */
 
 	{ "keys": ["ctrl+shift+a"], "command": "expand_region" },

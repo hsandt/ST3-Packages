@@ -9,6 +9,7 @@
 /EncodingHelper
 /GL Shader Validator
 /Gobble
+/jsonschema
 /LaTeXTools
 /markupsafe
 /mdpopups
@@ -20,6 +21,7 @@
 /python-jinja2
 /shellenv
 /SublimeCodeIntel
+/SublimeGDB
 /SublimeHighlight
 /SublimeLinter
 /SublimeREPL
