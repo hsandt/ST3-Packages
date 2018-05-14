@@ -29,6 +29,12 @@
 	// open console
 	{ "keys": ["ctrl+super+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
+	// open build panel
+	{ "keys": ["super+f4"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true} },
+
+	// reveal in side-bar
+	{ "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar" },
+
 	/* SELECTION */
 
 	{ "keys": ["super+shift+a"], "command": "expand_region" },

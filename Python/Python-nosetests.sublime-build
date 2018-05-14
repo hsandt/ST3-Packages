@@ -6,7 +6,7 @@
     	"PYTHONPATH":"/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages"
 	},
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-	//"selector": "source.python"
+	"selector": "source.python"
 
 	"linux": {
 		"path": "/usr/bin",

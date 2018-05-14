@@ -5,7 +5,8 @@ import os
 SYSTEM = '/usr/bin:/bin:/usr/sbin:/sbin'
 LOCAL = '/usr/local/bin:/usr/local/sbin'
 HOME = os.environ['HOME']  # uncomment if you want to use binaries from your home
-# RVM = HOME + '/.rvm/bin:'
+CARGO = HOME + '/.cargo/bin'
+# RVM = HOME + '/.rvm/bin'
 
 # Sublime's default path is
 # /usr/bin:/bin:/usr/sbin:/sbin
@@ -14,6 +15,8 @@ os.environ['PATH'] = ''
 os.environ['PATH'] += HOME + '/bin'
 os.environ['PATH'] += ':'
 os.environ['PATH'] += LOCAL
+os.environ['PATH'] += ':'
+os.environ['PATH'] += CARGO
 os.environ['PATH'] += ':'
 os.environ['PATH'] += SYSTEM
 # os.environ['PATH'] += RVM
