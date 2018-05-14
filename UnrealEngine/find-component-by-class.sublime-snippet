@@ -1,0 +1,10 @@
+<snippet>
+	<description>FindComponentByClass</description>
+    <content><![CDATA[U${1:My}Component* $1Component = ${2:Actor}->FindComponentByClass<U$1Component>();
+if ($1Component != nullptr)
+{
+	$0
+}]]></content>
+    <tabTrigger>comp</tabTrigger>
+    <scope>source.c++</scope>
+</snippet>
