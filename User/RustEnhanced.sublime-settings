@@ -1,0 +1,26 @@
+{
+	"cargo_build":
+	{
+		"defaults":
+		{
+			"env":
+			{
+			}
+		},
+		"variants":
+		{
+			"clean":
+			{
+				"env":
+				{
+				}
+			},
+			"run":
+			{
+				"env":
+				{
+				}
+			}
+		}
+	}
+}

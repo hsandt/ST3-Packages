@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[var ${1:component} = ${2:this}.GetComponent<${3:${1/(.)/\u$1/}}>();
+if ($1 != null) {
+	$0
+}]]></content>
+    <tabTrigger>checkcomponent</tabTrigger>
+    <scope>source.cs</scope>
+    <description>check component</description>
+</snippet>
