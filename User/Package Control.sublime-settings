@@ -7,6 +7,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"ANSIescape",
 		"AutocompletionFuzzy",
 		"AutoHotkey",
 		"Bash Build System",
@@ -36,15 +37,16 @@
 		"Haxe",
 		"HexViewer",
 		"ImprovedMacros",
+		"KeybindingHelper",
 		"Keymaps",
 		"Line Endings Unify",
 		"Local History",
+		"LSP",
 		"MoveTab",
 		"OmniSharp",
 		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
-		"PICO-8",
 		"Preference Helper",
 		"Preferences Editor",
 		"Project Specific Syntax Settings",
@@ -81,6 +83,7 @@
 	[
 		"https://github.com/n1k0/SublimeHighlight/tree/python3",
 		"https://github.com/skuroda/ImprovedMacros",
-		"https://github.com/Pendrokar/SublimeLinter-contrib-csharplint"
+		"https://github.com/Pendrokar/SublimeLinter-contrib-csharplint",
+		"https://github.com/hsandt/sublime-PICO-8"
 	]
 }

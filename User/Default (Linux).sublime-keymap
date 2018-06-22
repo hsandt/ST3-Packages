@@ -9,6 +9,7 @@
 	// side bar navigation
 	{ "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" },  // rewritten in User because double shortcuts are overriden by last shortcut
 	{ "keys": ["ctrl+alt+w"], "command": "focus_side_bar" },
+	{ "keys": ["ctrl+alt+r"], "command": "reveal_in_side_bar"},
 
 	// tab navigation
 	{ "keys": ["ctrl+super+alt+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
@@ -97,6 +98,10 @@
 	// shortcut for soft deletes (left until indentation excluded and right until EOL excluded)
 	{ "keys": ["shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to BOL.sublime-macro"} },
 	{ "keys": ["shift+delete"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to EOL.sublime-macro"} },
+
+	// delete words (redefine defaults to override Expression package which inverts ctrl and alt comapred compared to us)
+	{ "keys": ["ctrl+backspace"], "command": "delete_word", "args": {"forward": false} },
+	{ "keys": ["ctrl+delete"], "command": "delete_word", "args": {"forward": true} },
 
 	// delete subwords
 	{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword.sublime-macro"} },
