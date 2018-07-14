@@ -69,6 +69,9 @@
 	// Incremental expand (scope, sublime native command); includes quotes the 1st time
 	{ "keys": ["ctrl+shift+alt+a"], "command": "expand_selection", "args": {"to": "scope"} },
 
+	// Restore Find under expand skip command (overridden by unknown plugin)
+	{ "keys": ["ctrl+k", "ctrl+d"], "command": "find_under_expand_skip" },
+
 	// Packages-specific shortcuts: BracketHighlighter
 
 	/* TEXT EDIT */
@@ -83,7 +86,8 @@
 		]
 	},
 
-	// [LINUX] restore lower case shortcut, which is overriden by some package
+	// [LINUX] restore upper/lower case shortcuts (for some reason, the 2nd part of the shortcut will be interpreted separately otherwise)
+	{ "keys": ["ctrl+k", "ctrl+u"], "command": "upper_case" },
 	{ "keys": ["ctrl+k", "ctrl+l"], "command": "lower_case" },
 
 	// swap the keybindings for paste and paste_and_indent
@@ -108,7 +112,7 @@
 	{ "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/Delete Subword Forward.sublime-macro"} },
 
 	// case conversion
-	{ "keys": ["ctrl+k", "ctrl+u"], "command": "convert_to_camel" },
+	{ "keys": ["ctrl+k", "ctrl+c"], "command": "convert_to_camel" },
 	{ "keys": ["ctrl+k", "ctrl+s"], "command": "convert_to_snake"},
 
 	// swap lines

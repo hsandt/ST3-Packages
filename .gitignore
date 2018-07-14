@@ -14,6 +14,7 @@
 /markupsafe
 /mdpopups
 /OmniSharp
+/orgmode
 /pymdownx
 /pyyaml
 /pygments
@@ -31,6 +32,11 @@
 /SyntaxFold
 
 /User/SublimeLinter
+# Sublime Linter settings backup
+*.orig
+
+# orgmode archive
+*.gz
 
 /Package Control.cache/
 /User/ANSIescape/*.tmTheme
