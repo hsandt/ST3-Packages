@@ -6,6 +6,7 @@ SYSTEM = '/usr/bin:/bin:/usr/sbin:/sbin'
 LOCAL = '/usr/local/bin:/usr/local/sbin'
 HOME = os.environ['HOME']  # uncomment if you want to use binaries from your home
 CARGO = HOME + '/.cargo/bin'
+LUA = HOME + '/Developer/hererocks/lua5.3/bin'
 # RVM = HOME + '/.rvm/bin'
 
 # Sublime's default path is
@@ -19,6 +20,8 @@ os.environ['PATH'] += ':'
 os.environ['PATH'] += CARGO
 os.environ['PATH'] += ':'
 os.environ['PATH'] += SYSTEM
+os.environ['PATH'] += ':'
+os.environ['PATH'] += LUA
 # os.environ['PATH'] += RVM
 
 print('PATH = ' + os.environ['PATH'])
