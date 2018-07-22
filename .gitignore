@@ -23,6 +23,7 @@
 /python-jinja2
 /pyyaml
 /PICO-8
+/sublime-PICO-8
 /shellenv
 /SublimeCodeIntel
 /SublimeGDB
@@ -66,3 +67,4 @@ User/oscrypto-ca-bundle.crt
 /User/UnityC#.sublime-settings
 /User/Preferences.sublime-settings
 /User/.SublimeREPLHistory/*.db
+/User/PICO-8.sublime-settings
