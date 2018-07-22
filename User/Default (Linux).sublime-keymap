@@ -21,6 +21,10 @@
 	{ "keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 
+	// [OVERRIDE] Restore sub-word navigation, overriden by orgmode
+	{ "keys": ["alt+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+	{ "keys": ["alt+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+
 	// open Default/User settings in dual pane
 	{ "keys": ["ctrl+alt+s"], "command": "edit_settings",
 		"args": {
