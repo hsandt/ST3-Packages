@@ -61,6 +61,10 @@
 	// open build panel
 	{ "keys": ["shift+f4"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true} },
 
+	// result navigation (especially errors)
+	{ "keys": ["f8"], "command": "next_result" },
+	{ "keys": ["f7"], "command": "prev_result" },
+
 	// [OVERRIDE] Re-override AutocompletionFuzzy to native Quick Switch Project...
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
