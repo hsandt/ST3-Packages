@@ -67,6 +67,8 @@
 		"SublimeLinter-contrib-csharplint",
 		"SublimeLinter-cppcheck",
 		"SublimeLinter-cpplint",
+		"SublimeLinter-lua",
+		"SublimeLinter-luacheck",
 		"SublimeREPL",
 		"SyntaxFold",
 		"SyntaxManager",
