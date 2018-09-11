@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[debuglog("${1:x}: "..${0:$1})]]></content>
-    <tabTrigger>debuglog</tabTrigger>
-    <scope>source.p8</scope>
-    <description>debuglog("x: "..x)</description>
-</snippet>
