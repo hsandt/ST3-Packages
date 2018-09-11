@@ -7,6 +7,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"AlignTab",
 		"ANSIescape",
 		"AutocompletionFuzzy",
 		"AutoHotkey",
@@ -58,7 +59,6 @@
 		"Shader Syntax (GLSL HLSL Cg)",
 		"SideBarEnhancements",
 		"Sublime Bookmarks",
-		"sublime-PICO-8",
 		"SublimeCodeIntel",
 		"SublimeGDB",
 		"SublimeHighlight",
