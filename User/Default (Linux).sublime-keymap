@@ -12,6 +12,12 @@
 	{ "keys": ["ctrl+alt+r"], "command": "reveal_in_side_bar"},
 
 	// tab navigation
+	// better on keyboards having no Super key on the left
+	{ "keys": ["ctrl+shift+alt+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+shift+alt+right"], "command": "focus_neighboring_group" },
+	{ "keys": ["ctrl+alt+left"], "command": "prev_view" },
+	{ "keys": ["ctrl+alt+right"], "command": "next_view" },
+	// better on keyboards having Super key on the left
 	{ "keys": ["ctrl+super+alt+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
 	{ "keys": ["ctrl+super+alt+right"], "command": "focus_neighboring_group" },
 	{ "keys": ["super+alt+left"], "command": "prev_view" },
@@ -21,7 +27,7 @@
 	{ "keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 
-	// [OVERRIDE] Restore sub-word navigation, overriden by orgmode
+	// [RESTORE] Restore sub-word navigation, overriden by orgmode
 	{ "keys": ["alt+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
 	{ "keys": ["alt+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
 
@@ -59,14 +65,17 @@
 	{ "keys": ["ctrl+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
 	// open build panel
-	{ "keys": ["shift+f4"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true} },
+	{ "keys": ["f5"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true} },
 
 	// result navigation (especially errors)
 	{ "keys": ["f8"], "command": "next_result" },
 	{ "keys": ["f7"], "command": "prev_result" },
 
-	// [OVERRIDE] Re-override AutocompletionFuzzy to native Quick Switch Project...
+	// [RESTORE] Restore AutocompletionFuzzy to native Quick Switch Project...
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+
+	// [RESTORE] Restore bookmark navigation overridden by RustAutoCompletion
+	{ "keys": ["f2"], "command": "next_bookmark" },
 
 	/* SELECTION */
 
@@ -83,6 +92,9 @@
 	// Packages-specific shortcuts: BracketHighlighter
 
 	/* TEXT EDIT */
+
+	// restore shortcut to add new line, overridden by Haxe package
+	{ "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
 
 	// [LINUX] add autocompletion on ctrl+space, which is not by default on Linux (copied from Windows Default keymap)
 	{ "keys": ["ctrl+space"], "command": "auto_complete" },
@@ -154,6 +166,11 @@
 	//         "color_scheme_2": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
 	//     }
 	// },
+
+	/* BUILD */
+
+	// restore select build shortcut, overriden by Haxe package (it should also select build for Haxe but it doesn't work)
+	{ "keys": ["ctrl+shift+b"], "command": "build", "args": {"select": true} },
 
 	/* PALETTE */
 
@@ -246,13 +263,18 @@
 
 	// ColorHighlighter
 	{
-		"keys": ["f5"],
+		"keys": ["ctrl+f5"],
 		"command": "color_picker",
 		"context": [
 			{
 				"key": "color_highlighter.color_picker"
 			}
 		]
+	},
+
+	// RustAutoComplete
+	{
+	    "keys": ["f1"], "command": "rust_goto_definition"
 	}
 
 ]
