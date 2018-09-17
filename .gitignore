@@ -14,6 +14,7 @@
 /markupsafe
 /mdpopups
 /OmniSharp
+/orgmode
 /pymdownx
 /pyyaml
 /pygments
@@ -22,6 +23,7 @@
 /python-jinja2
 /pyyaml
 /PICO-8
+/sublime-PICO-8
 /shellenv
 /SublimeCodeIntel
 /SublimeGDB
@@ -31,8 +33,14 @@
 /SyntaxFold
 
 /User/SublimeLinter
+# Sublime Linter settings backup
+*.orig
+
+# orgmode archive
+*.gz
 
 /Package Control.cache/
+/User/ANSIescape/*.tmTheme
 /User/Haxe.cache/
 /User/Preferences.sublime-settings
 #/User/Package Control.sublime-settings
@@ -59,3 +67,4 @@ User/oscrypto-ca-bundle.crt
 /User/UnityC#.sublime-settings
 /User/Preferences.sublime-settings
 /User/.SublimeREPLHistory/*.db
+/User/PICO-8.sublime-settings

@@ -13,6 +13,10 @@ else:
     HOME_BIN = None
     CARGO_BIN = None
     # RVM_BIN = None
+HOME = os.environ['HOME']  # uncomment if you want to use binaries from your home
+CARGO = HOME + '/.cargo/bin'
+LUA = HOME + '/Developer/hererocks/lua5.3/bin'
+# RVM = HOME + '/.rvm/bin'
 
 # Sublime's default path is
 # /usr/bin:/bin:/usr/sbin:/sbin

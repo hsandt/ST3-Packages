@@ -1,0 +1,17 @@
+<!-- http://blog.lotech.org/2013/04/fixing-lua-indenting-in-sublime-text.html -->
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Indent</string>
+	<key>scope</key>
+	<string>source.lua, source.p8</string>
+	<key>settings</key>
+	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>^\s*(else|end|\})\s*$|^\s*elseif\b((?!end).)*$</string>
+		<key>increaseIndentPattern</key>
+		<string>^\s*(else|elseif|for|(local\s+)?function|if|repeat|until|while)\b((?!end).)*$|.*\{\s*$</string>
+    </dict>
+</dict>
+</plist>
