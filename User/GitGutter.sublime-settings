@@ -1,8 +1,9 @@
 {
     "git_binary": {
-        "default": "", 
+        "default": "",
         "linux": "/usr/bin/git",
         "osx": "/usr/local/bin/git",
         "windows": "C:\\Program Files (x86)\\Git\\bin\\git.exe"
-    }
+    },
+    "show_line_annotation": "false"
 }
