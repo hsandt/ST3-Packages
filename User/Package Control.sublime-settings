@@ -48,6 +48,7 @@
 		"OverrideAudit",
 		"Package Control",
 		"PackageResourceViewer",
+		"PICO-8",
 		"Preference Helper",
 		"Preferences Editor",
 		"Project Specific Syntax Settings",
@@ -87,7 +88,6 @@
 	[
 		"https://github.com/n1k0/SublimeHighlight/tree/python3",
 		"https://github.com/skuroda/ImprovedMacros",
-		"https://github.com/Pendrokar/SublimeLinter-contrib-csharplint",
-		"https://github.com/hsandt/sublime-PICO-8"
+		"https://github.com/Pendrokar/SublimeLinter-contrib-csharplint"
 	]
 }
