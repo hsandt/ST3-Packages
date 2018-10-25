@@ -21,17 +21,33 @@
 	// [WINDOWS] go forward (default is alt+shift+keypad_minus)
 	{ "keys": ["alt+keypad_plus"], "command": "jump_forward" },
 
-	// open Default and User settings
-	{ "keys": ["alt+shift+s"], "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"} },
-	{ "keys": ["alt+s"], "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} },
+	// [RESTORE] Restore sub-word navigation, overriden by orgmode
+	{ "keys": ["alt+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+	{ "keys": ["alt+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
 
-	// open Default bindings
-	{ "keys": ["ctrl+shift+alt+k"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-keymap"} },
-	{ "keys": ["ctrl+shift+alt+m"], "command": "open_file", "args": {"file": "${packages}/Default/Default ($platform).sublime-mousemap"} },
+	// open Default/User settings in dual pane
+	{ "keys": ["alt+s"], "command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/Default/Preferences.sublime-settings",
+			"default": "{\n\t$0\n}\n"
+		}
+	},
 
-	// open User bindings
-	{ "keys": ["ctrl+alt+m"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-mousemap", "contents": "[\n\t$0\n]\n"} },
-	{ "keys": ["ctrl+alt+k"], "command": "open_file", "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"} },
+	// open keymap Default/User settings in dual pane
+	{ "keys": ["ctrl+alt+k"], "command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
+			"default": "{\n\t$0\n}\n"
+		}
+	},
+
+	// open mousemap Default/User settings in dual pane
+	{ "keys": ["ctrl+alt+m"], "command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
+			"default": "{\n\t$0\n}\n"
+		}
+	},
 
 	// open new tab
 	{ "keys": ["ctrl+t"], "command": "new_file" },
