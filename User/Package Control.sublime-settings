@@ -64,7 +64,6 @@
 		"SublimeGDB",
 		"SublimeHighlight",
 		"SublimeLinter",
-		"SublimeLinter Inline Errors",
 		"SublimeLinter-contrib-csharplint",
 		"SublimeLinter-cppcheck",
 		"SublimeLinter-cpplint",
@@ -80,7 +79,6 @@
 		"TrailingSpaces",
 		"Unity Completions",
 		"Whitespace",
-		"WordCount",
 		"Zip Browser"
 	],
 	"repositories":
