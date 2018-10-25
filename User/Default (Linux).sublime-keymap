@@ -74,8 +74,8 @@
 	// [RESTORE] Restore AutocompletionFuzzy to native Quick Switch Project...
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
-	// [RESTORE] Restore bookmark navigation overridden by RustAutoCompletion
-	{ "keys": ["f2"], "command": "next_bookmark" },
+	// [RESTORE] Restore sublime bookmark navigation overridden by RustAutoCompletion
+    { "keys": ["f2"], "command": "sublime_bookmark", "args" : { "type" : "goto_next" } },
 
 	/* SELECTION */
 
