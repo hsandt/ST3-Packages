@@ -85,6 +85,7 @@
 
 	// Incremental expand (scope, sublime native command); includes quotes the 1st time
 	{ "keys": ["ctrl+shift+alt+a"], "command": "expand_selection", "args": {"to": "scope"} },
+	{ "keys": ["ctrl+shift+e"], "command": "expand_selection_to_paragraph" },
 
 	// Restore Find under expand skip command (overridden by unknown plugin)
 	{ "keys": ["ctrl+k", "ctrl+d"], "command": "find_under_expand_skip" },
