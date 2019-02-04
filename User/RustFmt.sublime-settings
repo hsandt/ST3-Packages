@@ -1,4 +1,5 @@
 // RustFmt Settings - User
 {
-	"max_width": 140
+	"max_width": 140,
+  	"error_messages": false,
 }
