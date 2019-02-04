@@ -58,7 +58,10 @@
 	// open new tab
 	{ "keys": ["ctrl+t"], "command": "new_file" },
 
-	// [LINUX] goto anything (to re-override some autocompletion shortcut)
+	// switch header/implementation
+	{ "keys": ["ctrl+alt+up"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]} },
+
+	// goto anything (to re-override some autocompletion shortcut)
 	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
 	// open console
@@ -150,6 +153,7 @@
 	{ "keys": ["ctrl+alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Add Semicolumn and Line.sublime-macro"}, "context":
 		[
 			{ "key": "selector", "operator": "equal", "operand": ["source.cs", "source.cpp"] },
+			{ "key": "panel_visible", "operator": "equal", "operand": false }  // ctrl+alt+enter must Replace All, don't enter ; in search field!
 		]
 	},
 
