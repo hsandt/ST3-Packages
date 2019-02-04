@@ -36,6 +36,7 @@
 		"Haxe",
 		"HexViewer",
 		"ImprovedMacros",
+		"Increment Decrement",
 		"KeybindingHelper",
 		"Keymaps",
 		"Line Endings Unify",
@@ -79,6 +80,7 @@
 		"Trailing Punctuation",
 		"TrailingSpaces",
 		"Unity Completions",
+		"Valgrind",
 		"Whitespace",
 		"Zip Browser"
 	],
