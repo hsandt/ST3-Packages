@@ -68,7 +68,7 @@
 	{ "keys": ["ctrl+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
 	// open build panel
-	{ "keys": ["f5"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true} },
+	{ "keys": ["f4"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true} },
 
 	// result navigation (especially errors)
 	{ "keys": ["f8"], "command": "next_result" },
@@ -280,6 +280,9 @@
 	// RustAutoComplete
 	{
 	    "keys": ["f1"], "command": "rust_goto_definition"
-	}
+	},
 
+	// SublimeGDB
+    { "keys": ["f5"], "command": "gdb_continue", "context": [{"key": "gdb_running", "operator": "equal", "operand": true}] },
+    { "keys": ["ctrl+f5"], "command": "gdb_exit", "context": [{"key": "gdb_running", "operator": "equal", "operand": true}] },
 ]
