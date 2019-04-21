@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[log("${1:x}: "..${0:$1}, "trace")]]></content>
+    <tabTrigger>trace_value</tabTrigger>
+    <scope>source.p8</scope>
+    <description>log("x: "..x, "trace")</description>
+</snippet>
