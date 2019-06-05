@@ -41,6 +41,7 @@
 *.gz
 
 /Package Control.cache/
+/User/*.tmTheme
 /User/ANSIescape/*.tmTheme
 /User/Haxe.cache/
 /User/Preferences.sublime-settings
