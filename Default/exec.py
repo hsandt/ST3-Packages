@@ -1,4 +1,10 @@
-# Patched with patch from https://github.com/SublimeTextIssues/Core/issues/2293
+# Patched based on answer at https://github.com/SublimeTextIssues/Core/issues/2293 by kaste
+# Copy it to your Packages/Default/exec.py
+# Use OverrideAudit (https://github.com/OdatNurd/OverrideAudit/) to detect official script changes on Sublime Text upgrades
+
+# Extra:
+# - use read1 instead of read
+# - use start_new_session=True instead of preexec_fn
 
 import collections
 import functools
@@ -61,11 +67,6 @@ class AsyncProcess(object):
         for k, v in proc_env.items():
             proc_env[k] = os.path.expandvars(v)
 
-        if sys.platform == "win32":
-            preexec_fn = None
-        else:
-            preexec_fn = os.setsid
-
         if shell_cmd and sys.platform == "win32":
             # Use shell=True on Windows, so shell_cmd is passed through with the correct escaping
             self.proc = subprocess.Popen(
@@ -85,7 +86,7 @@ class AsyncProcess(object):
                 stdin=subprocess.PIPE,
                 startupinfo=startupinfo,
                 env=proc_env,
-                preexec_fn=preexec_fn,
+                start_new_session=True,
                 shell=False)
         elif shell_cmd and sys.platform == "linux":
             # Explicitly use /bin/bash on Linux, to keep Linux and OSX as
@@ -98,7 +99,7 @@ class AsyncProcess(object):
                 stdin=subprocess.PIPE,
                 startupinfo=startupinfo,
                 env=proc_env,
-                preexec_fn=preexec_fn,
+                start_new_session=True,
                 shell=False)
         else:
 
@@ -110,7 +111,7 @@ class AsyncProcess(object):
                 stdin=subprocess.PIPE,
                 startupinfo=startupinfo,
                 env=proc_env,
-                preexec_fn=preexec_fn,
+                start_new_session=True,
                 shell=shell)
 
         if path:
