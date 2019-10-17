@@ -8,6 +8,7 @@
 	[
 		"Alignment",
 		"AlignTab",
+		"ANSIescape",
 		"AutocompletionFuzzy",
 		"AutoHotkey",
 		"Bash Build System",
