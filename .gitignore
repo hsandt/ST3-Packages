@@ -4,6 +4,7 @@
 /bz2
 /Codecs33
 /Colorsublime - Themes
+/enum
 /User/Color Highlighter
 /ConvertToUTF8
 /EncodingHelper
@@ -32,6 +33,7 @@
 /SublimePythonIDE
 /SublimeREPL
 /SyntaxFold
+/typing
 
 /User/SublimeLinter
 # Sublime Linter settings backup
