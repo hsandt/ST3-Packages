@@ -1,0 +1,9 @@
+{
+  "patterns": {
+    // Utests for lua files
+    "(.+).lua":
+      [
+        "$1_utest.lua"
+      ]
+  }
+}
