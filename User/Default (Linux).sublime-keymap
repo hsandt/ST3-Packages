@@ -97,6 +97,11 @@
 
 	/* TEXT EDIT */
 
+	// On Mint Cinnamon at least, numpad enter does nothing, so map it like enter.
+	// Note that this is not a full remapping, so it will insert a newline even if a context
+	// where enter would do something else, like confirm.
+	{ "keys": ["keypad_enter"], "command": "insert", "args": {"characters": "\n"} },
+
 	// restore shortcut to add new line, overridden by Haxe package
 	{ "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
 
