@@ -152,20 +152,20 @@ class AsyncProcess(object):
         return self.proc.poll()
 
     def read_fileno(self, fh, execute_finished):
-        decoder_cls = codecs.getincrementaldecoder(self.listener.encoding)
-        decoder = decoder_cls('replace')
-        while True:
-            data = decoder.decode(fh.read1(2**16))
+        if self.listener:
+            decoder_cls = codecs.getincrementaldecoder(self.listener.encoding)
+            decoder = decoder_cls('replace')
+            while True:
+                data = decoder.decode(fh.read1(2**16))
 
-            if len(data) > 0:
-                if self.listener:
+                if len(data) > 0:
                     self.listener.on_data(self, data)
-            else:
-                fh.close()
+                else:
+                    fh.close()
 
-                if execute_finished and self.listener:
-                    self.listener.on_finished(self)
-                break
+                    if execute_finished:
+                        self.listener.on_finished(self)
+                    break
 
 
 class ExecCommand(sublime_plugin.WindowCommand, ProcessListener):
