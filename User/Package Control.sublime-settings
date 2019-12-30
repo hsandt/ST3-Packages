@@ -23,7 +23,6 @@
 		"Crystal",
 		"Djaneiro",
 		"EditorConfig",
-		"Environment Settings",
 		"ExpandRegion",
 		"Expression",
 		"FindKeyConflicts",
@@ -52,7 +51,6 @@
 		"PackageResourceViewer",
 		"PICO-8",
 		"Preference Helper",
-		"Preferences Editor",
 		"Project Specific Syntax Settings",
 		"ProjectManager",
 		"Related Files",
@@ -86,8 +84,7 @@
 		"Unity Completions",
 		"Valgrind",
 		"View In Browser",
-		"Whitespace",
-		"Zip Browser"
+		"Whitespace"
 	],
 	"repositories":
 	[
