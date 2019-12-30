@@ -9,7 +9,7 @@ if HOME is not None:
     HOME_BIN = HOME + '/bin'
     HOME_LOCAL_BIN = HOME + '/.local/bin'
     CARGO_BIN = HOME + '/.cargo/bin'
-    LUA_BIN = HOME + '/Developer/hererocks/lua5.3/bin'
+    LUA_BIN = HOME + '/Developer/Lua/hererocks/lua5.3/bin'
     RVM_BIN = HOME + '/.rvm/bin'
 else:
     HOME_BIN = None
