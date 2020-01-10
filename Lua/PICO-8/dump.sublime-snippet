@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[printh("${1:x}: "..dump(${0:$1}))]]></content>
+    <tabTrigger>dump</tabTrigger>
+    <scope>source.p8</scope>
+    <description>printh("x: "..dump(x))</description>
+</snippet>

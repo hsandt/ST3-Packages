@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[printh("${1:x}: "..stringify(${0:$1}))]]></content>
+    <tabTrigger>debug</tabTrigger>
+    <scope>source.p8</scope>
+    <description>printh("x: "..stringify(x))</description>
+</snippet>

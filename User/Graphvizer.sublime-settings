@@ -13,5 +13,5 @@
 	// The default value is "window", so the image will be shown in a new
 	// window by default. If you want to show it in a new layout instead,
 	// change the following value to "layout".
-	"show_image_with": "window"
+	"show_image_with": "tab"
 }

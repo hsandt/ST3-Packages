@@ -7,7 +7,7 @@
 		"path": "/usr/bin",
 		"env":
 		{
-			"PYTHONPATH":"/usr/local/lib/python3.5/dist-packages"
+			"PYTHONPATH":"/usr/local/lib/python3.6/dist-packages"
 		},
 	},
 	// "osx": {

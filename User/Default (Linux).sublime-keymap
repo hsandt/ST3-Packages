@@ -58,14 +58,17 @@
 	// open new tab
 	{ "keys": ["ctrl+t"], "command": "new_file" },
 
-	// [LINUX] goto anything (to re-override some autocompletion shortcut)
+	// switch header/implementation
+	{ "keys": ["ctrl+alt+up"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]} },
+
+	// goto anything (to re-override some autocompletion shortcut)
 	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
 	// open console
 	{ "keys": ["ctrl+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
 	// open build panel
-	{ "keys": ["f5"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true} },
+	{ "keys": ["f4"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true} },
 
 	// result navigation (especially errors)
 	{ "keys": ["f8"], "command": "next_result" },
@@ -74,8 +77,8 @@
 	// [RESTORE] Restore AutocompletionFuzzy to native Quick Switch Project...
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
-	// [RESTORE] Restore sublime bookmark navigation overridden by RustAutoCompletion
-    { "keys": ["f2"], "command": "sublime_bookmark", "args" : { "type" : "goto_next" } },
+	// [RESTORE] Restore bookmark navigation overridden by RustAutoCompletion
+    { "keys": ["f2"], "command": "next_bookmark" },
 
 	/* SELECTION */
 
@@ -85,6 +88,7 @@
 
 	// Incremental expand (scope, sublime native command); includes quotes the 1st time
 	{ "keys": ["ctrl+shift+alt+a"], "command": "expand_selection", "args": {"to": "scope"} },
+	{ "keys": ["ctrl+shift+e"], "command": "expand_selection_to_paragraph" },
 
 	// Restore Find under expand skip command (overridden by unknown plugin)
 	{ "keys": ["ctrl+k", "ctrl+d"], "command": "find_under_expand_skip" },
@@ -92,6 +96,11 @@
 	// Packages-specific shortcuts: BracketHighlighter
 
 	/* TEXT EDIT */
+
+	// On Mint Cinnamon at least, numpad enter does nothing, so map it like enter.
+	// Note that this is not a full remapping, so it will insert a newline even if a context
+	// where enter would do something else, like confirm.
+	{ "keys": ["keypad_enter"], "command": "insert", "args": {"characters": "\n"} },
 
 	// restore shortcut to add new line, overridden by Haxe package
 	{ "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
@@ -149,6 +158,7 @@
 	{ "keys": ["ctrl+alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Add Semicolumn and Line.sublime-macro"}, "context":
 		[
 			{ "key": "selector", "operator": "equal", "operand": ["source.cs", "source.cpp"] },
+			{ "key": "panel_visible", "operator": "equal", "operand": false }  // ctrl+alt+enter must Replace All, don't enter ; in search field!
 		]
 	},
 
@@ -275,6 +285,12 @@
 	// RustAutoComplete
 	{
 	    "keys": ["f1"], "command": "rust_goto_definition"
-	}
+	},
 
+	// SublimeGDB
+    { "keys": ["f5"], "command": "gdb_continue", "context": [{"key": "gdb_running", "operator": "equal", "operand": true}] },
+    { "keys": ["ctrl+f5"], "command": "gdb_exit", "context": [{"key": "gdb_running", "operator": "equal", "operand": true}] },
+
+    // Related Files
+    { "keys": ["ctrl+alt+e"], "command": "related_files"},
 ]

@@ -7,6 +7,6 @@
     // A list of search paths. This should generally just
     // be the path to the rust compiler src/ directory.
     "search_paths": [
-        "/home/wing/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
+        "~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
     ]
 }
