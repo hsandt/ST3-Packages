@@ -63,10 +63,10 @@
 	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
 	// open console
-	{ "keys": ["ctrl+shift+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+	{ "keys": ["ctrl+alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
 	// open build output
-	{"keys": ["shift+f4"], "command": "show_panel", "args": {"panel": "output.exec"} },
+	{"keys": ["f4"], "command": "show_panel", "args": {"panel": "output.exec"} },
 
 	/* SELECTION */
 
