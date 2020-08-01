@@ -9,6 +9,16 @@
 		"(.+)_utest.lua":
 		[
 			"$1.lua"
+		],
+		// Unit tests for Python tests
+		"(.+).py":
+		[
+			"test_$1.py"
+		],
+		// Python files for unit tests
+		"test_(.+).py":
+		[
+			"$1.lua"
 		]
 	}
 }
