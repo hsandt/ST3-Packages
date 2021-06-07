@@ -1,6 +1,6 @@
 {
 	"patterns": {
-	    // Utests for lua files
+	    // Utests for Lua files
 	    "(.+).lua":
 	    [
 	    	"$1_utest.lua"
@@ -10,15 +10,15 @@
 		[
 			"$1.lua"
 		],
-		// Unit tests for Python tests
+		// Unit tests for Python files (not working)
 		"(.+).py":
 		[
 			"test_$1.py"
 		],
-		// Python files for unit tests
+		// Python files for utests (not working)
 		"test_(.+).py":
 		[
-			"$1.lua"
+			"$1.py"
 		]
 	}
 }
