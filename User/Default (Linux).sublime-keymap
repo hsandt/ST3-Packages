@@ -182,6 +182,16 @@
 	// restore select build shortcut, overriden by Haxe package (it should also select build for Haxe but it doesn't work)
 	{ "keys": ["ctrl+shift+b"], "command": "build", "args": {"select": true} },
 
+	// general Cancel Build (pause instead of break on Linux)
+	{ "keys": ["ctrl+pause"], "command": "cancel_build" },
+
+	// Rust Cancel Build (pause instead of break on Linux)
+	{"keys": ["ctrl+pause"], "command": "rust_cancel", "context":
+	    [
+	        {"key": "selector", "operator":"equal", "operand": "source.rust"}
+	    ]
+	},
+
 	/* PALETTE */
 
 	// default command palette shortcut (put in user to get priority over AutocompletionFuzzy shortcut)
