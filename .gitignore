@@ -1,6 +1,7 @@
 /Autocompletion
 /AutoHotkey
 /backrefs
+/bracex
 /bz2
 /Codecs33
 /Colorsublime - Themes
@@ -35,6 +36,7 @@
 /SublimeREPL
 /SyntaxFold
 /typing
+/wcmatch
 
 /User/SublimeLinter
 /User/TabsExtra
