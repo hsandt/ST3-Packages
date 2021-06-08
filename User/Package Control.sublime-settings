@@ -72,7 +72,6 @@
 		"SublimeLinter-lua",
 		"SublimeLinter-luacheck",
 		"SublimePythonIDE",
-		"SublimeREPL",
 		"SyntaxFold",
 		"SyntaxManager",
 		"TabsExtra",
@@ -84,7 +83,7 @@
 		"Unity Completions",
 		"Valgrind",
 		"View In Browser",
-		"Whitespace"
+		"Whitespace",
 	],
 	"repositories":
 	[
