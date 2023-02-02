@@ -80,6 +80,25 @@
 	// [RESTORE] Restore bookmark navigation overridden by RustAutoCompletion
     { "keys": ["f2"], "command": "next_bookmark" },
 
+    // khrizt/GotoLastEdit shortcuts
+    {
+    	"keys": ["alt+q"],
+    	"command": "last_edit_line"
+    },
+
+    // GotoLastEditEnhanced conflicting shortcuts
+    {
+    	"keys": ["alt+z"],
+    	"command": "goto_last_edit_enhanced"
+    },
+    {
+    	"keys": ["alt+shift+z"],
+    	"command": "goto_last_edit_enhanced",
+    	"args": {
+    	  "backward": true
+    	}
+    },
+
 	/* SELECTION */
 
 	// Incremental expand (ExpandRegion package)
@@ -161,6 +180,9 @@
 			{ "key": "panel_visible", "operator": "equal", "operand": false }  // ctrl+alt+enter must Replace All, don't enter ; in search field!
 		]
 	},
+
+	// increase number by 8
+	{ "keys": ["alt+shift+e"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Increase Selected Number by 8.sublime-macro"} },
 
 	// toggle overwrite (INSERT is not available on some keyboards)
 	{ "keys": ["ctrl+shift+o"], "command": "toggle_overwrite" },
@@ -268,12 +290,6 @@
 			{"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
 			{"key": "overlay_visible", "operator": "equal", "operand": false},
 		],
-	},
-
-	// khrizt/GotoLastEdit shortcuts
-	{
-		"keys": ["alt+q"],
-		"command": "last_edit_line"
 	},
 
 	// Trailing Punctuation (; is $ in FR keyboard, . is ; in FR keyboard)
